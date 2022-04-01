@@ -3,7 +3,7 @@
 require 'TestPuttingObjectIntoDB.php';
 $servername = "sql2.njit.edu";
 $username = "vs598";
-$password = "7p984^KTdv@M8o^";
+$password = "";
 
 
 // Create connection
@@ -31,7 +31,3 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-
-
-
-
