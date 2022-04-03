@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9babab84-8eb4-4564-a57b-403c6c879108" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dbFiles/PushDataIntoDB.php" afterDir="false" />
+    <list default="true" id="9babab84-8eb4-4564-a57b-403c6c879108" name="Changes" comment="Added DB functions and removed the TestPuttingObjectIntoDB.php file">
+      <change afterPath="$PROJECT_DIR$/dbFiles/UsingAccountObjecTemplate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbFiles/PushDataIntoDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/PushDataIntoDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbFiles/RefugeeOrganizationAccountObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/RefugeeOrganizationAccountObject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbFiles/SchoolAccountObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/SchoolAccountObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbFiles/TestPuttingObjectIntoDB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbFiles/StudentOrRefugeeAccountObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/StudentOrRefugeeAccountObject.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +44,16 @@
       <option name="presentableId" value="Default" />
       <updated>1648846986737</updated>
       <workItem from="1648846988614" duration="2500000" />
-      <workItem from="1648942555192" duration="6240000" />
+      <workItem from="1648942555192" duration="8734000" />
     </task>
+    <task id="LOCAL-00001" summary="Added DB functions and removed the TestPuttingObjectIntoDB.php file">
+      <created>1648997330845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648997330845</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,5 +69,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added DB functions and removed the TestPuttingObjectIntoDB.php file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DB functions and removed the TestPuttingObjectIntoDB.php file" />
   </component>
 </project>

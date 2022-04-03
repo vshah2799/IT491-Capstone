@@ -26,7 +26,7 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject,
 //This function gets an Account Object where the username and Account Type match
 //This does not check if the password is correct,that must done in the logic after calling this function
 function getAccountObject($accountUsername, $accountType, $servername,$dbUsername,$password){
-    $conn = mysqli_connect($servername, $dbUsername, $password, "Accounts");
+    $conn = mysqli_connect($servername, $dbUsername, $password, "vs598");
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
@@ -37,7 +37,9 @@ function getAccountObject($accountUsername, $accountType, $servername,$dbUsernam
     if ($result->num_rows > 0) {
         // output data of each row
         $row = $result->fetch_assoc();
-        return $row["AccountObject"];
+        $accountObject = base64_decode($row["AccountObject"]);
+        return unserialize($accountObject);
+
     } else {
         return FALSE;
     }

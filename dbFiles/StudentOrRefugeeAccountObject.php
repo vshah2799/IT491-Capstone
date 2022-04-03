@@ -2,10 +2,12 @@
 
 class StudentOrRefugeeAccountObject
 {
-    //Can be student or refugee
+
     private int $age;
 
+    //Can be student or refugee
     private string $accountType;
+
     private string $username;
     private string $password;
     private string $organization;
@@ -17,6 +19,14 @@ class StudentOrRefugeeAccountObject
     private array $languages;
     private array $interestsAndHobbies;
     private array $subjects;
+
+    /* Constructor doesn't work for some reason so not including it
+    public function __construct($username, $password)
+    {
+        $this->$username = $username;
+        $this->$password = $password;
+    }
+    */
 
     /**
      * @return int
@@ -211,11 +221,7 @@ class StudentOrRefugeeAccountObject
     }
 
 
-    public function __construct($username, $password)
-    {
-        $this->$username = $username;
-        $this->$password = $password;
-    }
+
 
 
 }

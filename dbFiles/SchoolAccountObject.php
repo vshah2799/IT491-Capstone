@@ -127,9 +127,11 @@ class SchoolAccountObject
         $this->address = $address;
     }
 
-    public function __construct($username, $password)
-    {
-        $this->$username = $username;
-        $this->$password = $password;
-    }
+    /* Constructor doesn't work for some reason so not including it
+   public function __construct($username, $password)
+   {
+       $this->$username = $username;
+       $this->$password = $password;
+   }
+   */
 }
