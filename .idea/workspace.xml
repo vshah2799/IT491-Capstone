@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9babab84-8eb4-4564-a57b-403c6c879108" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignIn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbFiles/PushDataIntoDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbFiles/RefugeeOrganizationAccountObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/RefugeeOrganizationAccountObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbFiles/SchoolAccountObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbFiles/SchoolAccountObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbFiles/TestPuttingObjectIntoDB.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
   <component name="ProjectId" id="27DFw4DTBYIoovuENiGvoHUlwuV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,10 +43,22 @@
       <option name="presentableId" value="Default" />
       <updated>1648846986737</updated>
       <workItem from="1648846988614" duration="2500000" />
+      <workItem from="1648942555192" duration="6240000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

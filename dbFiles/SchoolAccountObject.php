@@ -3,12 +3,29 @@
 class SchoolAccountObject
 {
 
+    private string $accountType;
     private string $school;
     private string $adminFirstName;
     private string $adminLastName;
     private string $username;
     private string $password;
     private string $address;
+
+    /**
+     * @return string
+     */
+    public function getAccountType(): string
+    {
+        return $this->accountType;
+    }
+
+    /**
+     * @param string $accountType
+     */
+    public function setAccountType(string $accountType): void
+    {
+        $this->accountType = $accountType;
+    }
 
     /**
      * @return string
