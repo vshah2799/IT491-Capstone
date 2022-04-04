@@ -220,8 +220,4 @@ class StudentOrRefugeeAccountObject
         $this->subjects = $subjects;
     }
 
-
-
-
-
 }
