@@ -11,3 +11,27 @@
 </body>
 </html>
 <?php
+//Need to get Name, Gender, Age, School Going Off Of Current WireFrame For StudentList
+//Figure Out How To Include Headshot of Student
+// has to be $accountType = Student
+session_start();
+include (__DIR__ . "database_placeholder.php");
+include(__DIR__ . "StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+
+$result = $db->query("SELECT $firstname,$lastname,$gender,$age FROM users where 'student'=$accountType");  // we dont have a private string $school variable so I didnt include it fow now
+
+while ($row = mysql_fetch_assoc($result)) {
+    echo $row['firstname'];
+    echo $row['lastname'];
+    echo $row['gender'];
+    echo $row['age'];
+    //echo $row['school'];
+}
+
+//Never worked with images in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
+// SELECT imgpath FROM imgpathstable WHERE userid = $loggedInUser["id"]
+// and then display it with something like :
+// echo "<img href='$imgPath' ...
+
+
+?>
