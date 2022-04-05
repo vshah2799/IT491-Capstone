@@ -12,8 +12,10 @@
 </body>
 </html>
 <?php
+//include ('dbFiles/PushDataIntoDB.php');
+require __DIR__.'dbFiles/PushDataIntoDB.php';
 session_start();
-include "database_placeholder.php"; //replace this
+
 
 //Function for validating data, may not be needed
 if(isset($_POST['username']) && isset($_POST['password'])) {
@@ -29,6 +31,19 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 $username = validate($_POST['username']);
 $password = validate($_POST['password']);
 
+//Validating email
+function validateEmail($email) {
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "{$email}: A valid email"."<br>";
+    }
+    else {
+        echo "{$email}: Not a valid email"."<br>";
+    }
+}
+
+$email = validateEmail($_POST['email']);
+
+
 //Check for username and password entry
 if(empty($user)) {
     header ("Location: index.php?error=Username is Required");
@@ -39,23 +54,20 @@ else if (empty($password)) {
     exit();
 }
 
-$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+//HardCoded, temporary, must replace
+$accountUsername = "accountUsername"; //Not sure why there are two checks for username
+$accountType = "Student";
 
-$result = mysqli_query($conn, $sql); //watch out for $conn
 
-if(mysqli_num_rows($result) === 1) {
-    $row = mysqli_fetch_assoc($result);
-    if($row['username'] === $username && $row['password'] === $password) {
-        echo 'Successfully logged in!';
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['name'] = $row['name'];
-        $_SESSION['id'] = $row['id'];
-        header("Location: home.php"); //placeholder for homepage
-        exit();
-    }
-    else{
-        header ("Location: index.php?error=Incorrect username or password");
-    }
+if (getAccountObject($accountUsername, $accountType, $email, $username, $password)) {
+    //Not sure how to grab the password from the database here to check for password
+    //if ($password == $databasePassword)
+
+    echo 'Successfully logged in!';
+    $_SESSION['username'] = $username; //placeholder variables
+    $_SESSION['name'] = $accountUsername;
+    header("Location: home.php"); //placeholder for homepage
+    exit();
 }
 else{
     header("Location: index.php");
