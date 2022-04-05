@@ -53,6 +53,10 @@ else if (empty($password)) {
     header ("Location: index.php?error=Password is Required");
     exit();
 }
+else if (empty($email)) {
+    header ("Location: index.php?error=Email is Required");
+    exit();
+}
 
 //HardCoded, temporary, must replace
 $accountUsername = "accountUsername"; //Not sure why there are two checks for username
