@@ -31,17 +31,15 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 $username = validate($_POST['username']);
 $password = validate($_POST['password']);
 
+$email = $_POST['username'];
 //Validating email
-function validateEmail($email) {
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "{$email}: A valid email"."<br>";
-    }
-    else {
-        echo "{$email}: Not a valid email"."<br>";
-    }
+if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //nothing required
 }
-
-$email = validateEmail($_POST['email']);
+else {
+    echo("$email is not a valid email address");
+    exit();
+}
 
 
 //Check for username and password entry
