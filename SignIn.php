@@ -12,8 +12,10 @@
 </body>
 </html>
 <?php
-//include ('dbFiles/PushDataIntoDB.php');
-require __DIR__.'dbFiles/PushDataIntoDB.php';
+include ('dbFiles/PushDataIntoDB.php');
+include ('dbFiles/StudentOrRefugeeAccountObject.php');
+
+
 session_start();
 
 
@@ -56,24 +58,19 @@ else if (empty($email)) {
     exit();
 }
 
-//HardCoded, temporary, must replace
-$accountUsername = "accountUsername"; //Not sure why there are two checks for username
-$accountType = "Student";
+$accountObject = getAccountObject($username, "Student", "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
 
-
-if (getAccountObject($accountUsername, $accountType, $email, $username, $password)) {
-    //Not sure how to grab the password from the database here to check for password
-    //if ($password == $databasePassword)
+if (($accountObject->getPassword() == $password) && ($accountObject->getUsername() == $username)) {
 
     echo 'Successfully logged in!';
-    $_SESSION['username'] = $username; //placeholder variables
-    $_SESSION['name'] = $accountUsername;
+    $_SESSION['username'] = $username;
     header("Location: home.php"); //placeholder for homepage
-    exit();
 }
 else{
     header("Location: index.php");
     exit();
 }
+
+
 
 ?>
