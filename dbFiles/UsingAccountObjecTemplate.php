@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("PushDataIntoDB.php");
 include("StudentOrRefugeeAccountObject.php");
 
@@ -28,4 +29,5 @@ $testObjectTwo = getAccountObject("vshah", "Student", "sql2.njit.edu", "vs598", 
 
 //All fields of the Object can now be accessed like this
 //For signing in, get the password from this and make sure they match for verification
-print($testObjectTwo->getUsername());
+$_SESSION["username"] = $testObjectTwo->getUsername();
+print($_SESSION["username"]);
