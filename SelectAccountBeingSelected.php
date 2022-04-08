@@ -7,8 +7,10 @@
 </head>
 <body>
 <div class="mx-auto" style="width: 200px;">
-    <a href="index.php" type="button" class="btn btn-primary" >Primary</a>
-    <a href="index.php" type="button" class="btn btn-primary" >Primary</a>
+    <a href="SignUpRefugeeOne.php" type="button" class="btn btn-primary" >Refugee</a>
+    <a href="SignUpStudentOne.php" type="button" class="btn btn-primary" >Student</a>
+    <a href="SignUpForRefugeeOrganization.php" type="button" class="btn btn-primary" >Refugee Organization</a>
+    <a href="SignUpForSchool.php" type="button" class="btn btn-primary" >School</a>
 </div>
 
 
@@ -17,3 +19,7 @@
 </html>
 <?php
 session_start();
+
+if(isset($_SESSION["Username"])){
+    header("Location: SignIn.php");
+}
