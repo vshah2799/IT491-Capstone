@@ -19,6 +19,12 @@ $testObject->setAccountType("Student");
 $testObject->setAge(22);
 $testObject->setSubjects(["Math", "English"]);
 $testObject->setEthnicity("Indian");
+$testObject->setOrganization("NJIT");
+$testObject->setFirstName("Vishal");
+$testObject->setLastName("Shah");
+$testObject->setGender("Boy");
+$testObject->setLanguages(["English"]);
+$testObject->setInterestsAndHobbies(["Sports"]);
 
 
 
@@ -32,4 +38,5 @@ $testObjectTwo = getAccountObject("vshah", "Student", "sql2.njit.edu", "vs598", 
 //For signing in, get the password from this and make sure they match for verification
 $_SESSION["username"] = $testObjectTwo->getUsername();
 print($_SESSION["username"]);
-print($testObjectTwo->getEthnicity());
+print($testObjectTwo->getFirstName());
+print($testObjectTwo->getGender());
