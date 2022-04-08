@@ -29,8 +29,8 @@ while ($row = fetch_assoc($result)) {
 }
 
 //Never worked with images/profile pictures in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
-// SELECT imgpath FROM imgpathstable WHERE userid = $loggedInUser["id"]
-// and then display it with something like :
-// echo "<img href='$imgPath' ...
+ SELECT imgpath FROM imgpathstable WHERE $username = $_SESSION["username"];
+//display it with something like :
+ echo "<img href='$imgPath'>;
 
 ?>
