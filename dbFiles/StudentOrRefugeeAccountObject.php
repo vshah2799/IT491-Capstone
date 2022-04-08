@@ -4,6 +4,7 @@ class StudentOrRefugeeAccountObject
 {
 
     private int $age;
+    private int $grade;
 
     //Can be student or refugee
     private string $accountType;
@@ -15,6 +16,7 @@ class StudentOrRefugeeAccountObject
     private string $lastName;
     private string $gender;
     private string $ethnicity;
+    private string $school;
 
     private array $languages;
     private array $interestsAndHobbies;
@@ -42,6 +44,22 @@ class StudentOrRefugeeAccountObject
     public function setAge(int $age): void
     {
         $this->age = $age;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGrade(): int
+    {
+        return $this->grade;
+    }
+
+    /**
+     * @param int $grade
+     */
+    public function setGrade(int $grade): void
+    {
+        $this->grade = $grade;
     }
 
     /**
@@ -170,6 +188,22 @@ class StudentOrRefugeeAccountObject
     public function setEthnicity(string $ethnicity): void
     {
         $this->ethnicity = $ethnicity;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSchool(): string
+    {
+        return $this->school;
+    }
+
+    /**
+     * @param string $school
+     */
+    public function setSchool(string $school): void
+    {
+        $this->school = $school;
     }
 
     /**
