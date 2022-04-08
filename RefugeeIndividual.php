@@ -15,18 +15,20 @@
 //Figure Out How To Include Headshot of Refugee
 // has to be $accountType = Refugee
 session_start();
-include (__DIR__ . "database_placeholder.php");
-include(__DIR__ . "StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+include("dbFiles/PushDataIntoDB.php");
+include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
 
-$result = $db->query("SELECT $firstname,$lastname,$age,$grade,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType &&  "); //Need to add a check so that it only pulls the account data of the specific refugee that was clicked on
+//require clarification on whether to use the getAccountObject function created in PushDataIntoDB.php file
 
-while ($row = mysql_fetch_assoc($result)) {
-    echo $row['firstname'];
-    echo $row['lastname'];
-    echo $row['age'];
-    echo $row['grade'];
-    echo $row['subjects'];
-    echo $row['interestsAndHobbies'];
+$result = $db->query("SELECT $firstname,$lastname,$age,$grade,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType && Username='$accountUsername' "); //Need to add a check so that it only pulls the account data of the specific refugee that was clicked on
+
+while ($row = fetch_assoc($result)) {
+    echo $row['firstname'] . "<br />";
+    echo $row['lastname'] . "<br />";
+    echo $row['age'] . "<br />";
+    echo $row['grade'] . "<br />";
+    echo $row['subjects'] . "<br />";
+    echo $row['interestsAndHobbies'] . "<br />";
 
 }
 

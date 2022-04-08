@@ -15,17 +15,17 @@
 //Figure Out How To Include Headshot of Student
 // has to be $accountType = Student
 session_start();
-include (__DIR__ . "database_placeholder.php");
-include(__DIR__ . "StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+include("dbFiles/PushDataIntoDB.php");
+include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
 
 $result = $db->query("SELECT $firstname,$lastname,$gender,$age,$organizationOrSchool FROM users where 'student'=$accountType");
 
-while ($row = mysql_fetch_assoc($result)) {
-    echo $row['firstname'];
-    echo $row['lastname'];
-    echo $row['gender'];
-    echo $row['age'];
-    echo $row['organizationOrSchool'];
+while ($row = fetch_assoc($result)) {
+    echo $row['firstname'] . "<br />";
+    echo $row['lastname'] . "<br />";
+    echo $row['gender'] . "<br />";
+    echo $row['age'] . "<br />";
+    echo $row['organizationOrSchool'] . "<br />";
 }
 
 //Never worked with images in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
@@ -35,4 +35,3 @@ while ($row = mysql_fetch_assoc($result)) {
 
 
 ?>
-session_start();
