@@ -11,4 +11,29 @@
 </body>
 </html>
 <?php
+//Need to get Name, Age, School, Grade Level, Skills(Subjects), Hobbies Going Off Of Current WireFrame For StudentIndividual
+//Figure Out How To Include Headshot of Student
+// has to be $accountType = Student
+session_start();
+include (__DIR__ . "database_placeholder.php");
+include(__DIR__ . "StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+
+$result = $db->query("SELECT $firstname,$lastname,$age,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType &&  "); //Need to add a check so that it only pulls the account data of the specific student that was clicked on // also need to create private string $school variable and private int $grade variable
+
+while ($row = mysql_fetch_assoc($result)) {
+    echo $row['firstname'];
+    echo $row['lastname'];
+    echo $row['age'];
+    //echo $row['school'];
+    //echo $row['grade'];
+    echo $row['subjects'];
+    echo $row['interestsAndHobbies'];
+}
+
+//Never worked with images in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
+// SELECT imgpath FROM imgpathstable WHERE userid = $loggedInUser["id"]
+// and then display it with something like :
+// echo "<img href='$imgPath' ...
+
+?>
 session_start();
