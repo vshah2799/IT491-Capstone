@@ -18,13 +18,13 @@ session_start();
 include (__DIR__ . "database_placeholder.php");
 include(__DIR__ . "StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
 
-$result = $db->query("SELECT $firstname,$lastname,$age,$school, $grade,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType &&  "); //Need to add a check so that it only pulls the account data of the specific student that was clicked on
+$result = $db->query("SELECT $firstname,$lastname,$age,$organizationOrSchool, $grade,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType &&  "); //Need to add a check so that it only pulls the account data of the specific student that was clicked on
 
 while ($row = mysql_fetch_assoc($result)) {
     echo $row['firstname'];
     echo $row['lastname'];
     echo $row['age'];
-    echo $row['school'];
+    echo $row['organizationOrSchool'];
     echo $row['grade'];
     echo $row['subjects'];
     echo $row['interestsAndHobbies'];

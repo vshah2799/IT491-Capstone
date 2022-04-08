@@ -11,12 +11,11 @@ class StudentOrRefugeeAccountObject
 
     private string $username;
     private string $password;
-    private string $organization;
+    private string $organizationOrSchool;
     private string $firstName;
     private string $lastName;
     private string $gender;
     private string $ethnicity;
-    private string $school;
 
     private array $languages;
     private array $interestsAndHobbies;
@@ -113,17 +112,17 @@ class StudentOrRefugeeAccountObject
     /**
      * @return string
      */
-    public function getOrganization(): string
+    public function getOrganizationOrSchool(): string
     {
-        return $this->organization;
+        return $this->organizationorschool;
     }
 
     /**
-     * @param string $organization
+     * @param string $organizationOrSchool
      */
-    public function setOrganization(string $organization): void
+    public function setOrganizationOrSchool(string $organizationOrSchool): void
     {
-        $this->organization = $organization;
+        $this->organizationorschool = $organizationOrSchool;
     }
 
     /**
@@ -188,22 +187,6 @@ class StudentOrRefugeeAccountObject
     public function setEthnicity(string $ethnicity): void
     {
         $this->ethnicity = $ethnicity;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSchool(): string
-    {
-        return $this->school;
-    }
-
-    /**
-     * @param string $school
-     */
-    public function setSchool(string $school): void
-    {
-        $this->school = $school;
     }
 
     /**
