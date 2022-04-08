@@ -12,8 +12,12 @@
 </body>
 </html>
 <?php
+include ('dbFiles/PushDataIntoDB.php');
+include ('dbFiles/StudentOrRefugeeAccountObject.php');
+
+
 session_start();
-include "database_placeholder.php"; //replace this
+
 
 //Function for validating data, may not be needed
 if(isset($_POST['username']) && isset($_POST['password'])) {
@@ -29,6 +33,17 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 $username = validate($_POST['username']);
 $password = validate($_POST['password']);
 
+$email = $_POST['username'];
+//Validating email
+if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //nothing required
+}
+else {
+    echo("$email is not a valid email address");
+    exit();
+}
+
+
 //Check for username and password entry
 if(empty($user)) {
     header ("Location: index.php?error=Username is Required");
@@ -38,5 +53,24 @@ else if (empty($password)) {
     header ("Location: index.php?error=Password is Required");
     exit();
 }
+else if (empty($email)) {
+    header ("Location: index.php?error=Email is Required");
+    exit();
+}
+
+$accountObject = getAccountObject($username, "Student", "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
+
+if (($accountObject->getPassword() == $password) && ($accountObject->getUsername() == $username)) {
+
+    echo 'Successfully logged in!';
+    $_SESSION['username'] = $username;
+    header("Location: home.php"); //placeholder for homepage
+}
+else{
+    header("Location: index.php");
+    exit();
+}
+
+
 
 ?>
