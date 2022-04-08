@@ -16,13 +16,14 @@ $testObject->setAccountType("Student");
 
 //This is how you would set the other attributes.
 //Subjects and Hobbies/Interests are arrays
-$testObject->setAge(2);
+$testObject->setAge(22);
 $testObject->setSubjects(["Math", "English"]);
+$testObject->setEthnicity("Indian");
 
 
 
 //This object is already in the DB so can't push it again
-//pushAccountObjectIntoDB($testObject->getUsername(), $testObject->getAccountType(), $testObject, "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
+pushAccountObjectIntoDB($testObject->getUsername(), $testObject->getAccountType(), $testObject, "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
 
 //Gets an account object with the specified Username and Account Type
 $testObjectTwo = getAccountObject("vshah", "Student", "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
@@ -31,3 +32,4 @@ $testObjectTwo = getAccountObject("vshah", "Student", "sql2.njit.edu", "vs598", 
 //For signing in, get the password from this and make sure they match for verification
 $_SESSION["username"] = $testObjectTwo->getUsername();
 print($_SESSION["username"]);
+print($testObjectTwo->getEthnicity());
