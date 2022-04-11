@@ -11,3 +11,5 @@
 </body>
 </html>
 <?php
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();

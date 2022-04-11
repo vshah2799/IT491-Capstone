@@ -14,6 +14,7 @@
 //Need to get Name, Gender, Age, Grade Level Going Off Of Current WireFrame For RefugeeList
 //Figure Out How To Include Headshot of Refugee
 // has to be $accountType = Refugee
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 include("dbFiles/PushDataIntoDB.php");
 include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.

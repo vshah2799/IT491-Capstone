@@ -29,10 +29,10 @@ $testObject->setInterestsAndHobbies(["Sports"]);
 
 
 //This object is already in the DB so can't push it again
-pushAccountObjectIntoDB($testObject->getUsername(), $testObject->getAccountType(), $testObject, "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
+pushAccountObjectIntoDB($testObject->getUsername(), $testObject->getAccountType(), $testObject);
 
 //Gets an account object with the specified Username and Account Type
-$testObjectTwo = getAccountObject("vshah", "Student", "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
+$testObjectTwo = getAccountObject("vshah", "Student");
 
 //All fields of the Object can now be accessed like this
 //For signing in, get the password from this and make sure they match for verification
