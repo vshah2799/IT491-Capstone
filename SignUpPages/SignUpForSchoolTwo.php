@@ -24,23 +24,23 @@ $lastNameFromForm = $_POST["AdminLastName"];
 $schoolFromForm = $_POST["School"];
 $addressFromForm = $_POST["Address"];
 
-$studentObject = new SchoolAccountObject();
-$studentObject ->setUsername($usernameFromForm);
-$studentObject->setPassword($passwordFromForm);
-$studentObject ->setAdminFirstName($firstNameFromForm);
-$studentObject ->setAdminLastName($lastNameFromForm);
-$studentObject ->setSchool($schoolFromForm);
-$studentObject ->setAddress($addressFromForm);
-$studentObject ->setAccountType("School");
+$schoolObject = new SchoolAccountObject();
+$schoolObject ->setUsername($usernameFromForm);
+$schoolObject->setPassword($passwordFromForm);
+$schoolObject ->setAdminFirstName($firstNameFromForm);
+$schoolObject ->setAdminLastName($lastNameFromForm);
+$schoolObject ->setSchool($schoolFromForm);
+$schoolObject ->setAddress($addressFromForm);
+$schoolObject->setAccountType("School");
 
 /*
-echo $studentObject ->getUsername();
-echo $studentObject->getPassword();
-echo $studentObject ->getAdminFirstName();
-echo $studentObject ->getAdminLastName();
-echo $studentObject ->getSchool();
-echo $studentObject ->getAddress();
-echo $studentObject ->getAccountType();
+echo $schoolObject ->getUsername();
+echo $schoolObject->getPassword();
+echo $schoolObject ->getAdminFirstName();
+echo $schoolObject ->getAdminLastName();
+echo $schoolObject ->getSchool();
+echo $schoolObject ->getAddress();
+echo $schoolObject ->getAccountType();
 */
 
 //pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);

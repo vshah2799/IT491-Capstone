@@ -24,23 +24,23 @@ $lastNameFromForm = $_POST["AdminLastName"];
 $organizationFromForm = $_POST["Organization"];
 $addressFromForm = $_POST["Address"];
 
-$refugeeObject = new RefugeeOrganizationAccountObject();
-$refugeeObject ->setUsername($usernameFromForm);
-$refugeeObject->setPassword($passwordFromForm);
-$refugeeObject ->setAdminFirstName($firstNameFromForm);
-$refugeeObject ->setAdminLastName($lastNameFromForm);
-$refugeeObject ->setOrganization($organizationFromForm);
-$refugeeObject ->setAddress($addressFromForm);
-$refugeeObject ->setAccountType("ROA");
+$roaObject = new RefugeeOrganizationAccountObject();
+$roaObject ->setUsername($usernameFromForm);
+$roaObject->setPassword($passwordFromForm);
+$roaObject ->setAdminFirstName($firstNameFromForm);
+$roaObject ->setAdminLastName($lastNameFromForm);
+$roaObject ->setOrganization($organizationFromForm);
+$roaObject ->setAddress($addressFromForm);
+$roaObject ->setAccountType("ROA");
 
 /*
-echo $refugeeObject ->getUsername();
-echo $refugeeObject->getPassword();
-echo $refugeeObject ->getAdminFirstName();
-echo $refugeeObject ->getAdminLastName();
-echo $refugeeObject ->getOrganization();
-echo $refugeeObject ->getAddress();
-echo $refugeeObject ->getAccountType();
+echo $roaObject ->getUsername();
+echo $roaObject->getPassword();
+echo $roaObject ->getAdminFirstName();
+echo $roaObject ->getAdminLastName();
+echo $roaObject ->getOrganization();
+echo $roaObject ->getAddress();
+echo $roaObject ->getAccountType();
 */
 
 //pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);

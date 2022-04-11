@@ -11,5 +11,20 @@
 </body>
 </html>
 <?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/SchoolAccountObject.php');
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
+    header("Location: ../SignUpPages/SignUpSelectAccountBeingSelected.php");
+}
+
+$schoolObject = $_SESSION["AccountObject"];
+
+echo $schoolObject ->getUsername();
+echo $schoolObject->getPassword();
+echo $schoolObject ->getAdminFirstName();
+echo $schoolObject ->getAdminLastName();
+echo $schoolObject ->getSchool();
+echo $schoolObject ->getAddress();
+echo $schoolObject ->getAccountType();

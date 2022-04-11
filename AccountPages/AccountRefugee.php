@@ -11,5 +11,25 @@
 </body>
 </html>
 <?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/StudentOrRefugeeAccountObject.php');
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
+    header("Location: ../SignUpPages/SignUpSelectAccountBeingSelected.php");
+}
+
+$refugeeObject = $_SESSION["AccountObject"];
+
+echo $refugeeObject->getUsername();
+echo $refugeeObject->getPassword();
+echo $refugeeObject->getFirstName();
+echo $refugeeObject->getLastName();
+echo $refugeeObject->getAge();
+echo $refugeeObject->getOrganizationOrSchool();
+echo $refugeeObject->getGender();
+echo $refugeeObject->getEthnicity();
+echo $refugeeObject->getLanguages();
+echo $refugeeObject->getGrade();
+echo $refugeeObject->getInterestsAndHobbies();
+echo $refugeeObject->getSubjects();

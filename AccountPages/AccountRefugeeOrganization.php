@@ -11,5 +11,20 @@
 </body>
 </html>
 <?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/RefugeeOrganizationAccountObject.php');
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
+    header("Location: ../SignUpPages/SignUpSelectAccountBeingSelected.php");
+}
+
+$roaObject = $_SESSION["AccountObject"];
+
+echo $roaObject ->getUsername();
+echo $roaObject->getPassword();
+echo $roaObject ->getAdminFirstName();
+echo $roaObject ->getAdminLastName();
+echo $roaObject ->getOrganization();
+echo $roaObject ->getAddress();
+echo $roaObject ->getAccountType();

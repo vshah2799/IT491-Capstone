@@ -51,6 +51,7 @@ $refugeeObject->setInterestsAndHobbies($interestsAndHobbiesFromForm);
 $refugeeObject->setSubjects($subjectsFromForm);
 $refugeeObject->setAccountType("Refugee");
 
+/*
 echo $refugeeObject->getUsername();
 echo $refugeeObject->getPassword();
 echo $refugeeObject->getFirstName();
@@ -64,5 +65,6 @@ echo $refugeeObject->getGrade();
 echo $refugeeObject->getInterestsAndHobbies();
 echo $refugeeObject->getSubjects();
 echo $refugeeObject->getAccountType();
+*/
 
 //pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);
