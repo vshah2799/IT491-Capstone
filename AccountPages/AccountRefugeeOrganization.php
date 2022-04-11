@@ -19,6 +19,12 @@ if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
     header("Location: ../SignUpPages/SignUpSelectAccountBeingSelected.php");
 }
 
+if ($_SESSION["AccountObject"] instanceof SchoolAccountObject){
+    header("Location: SchoolAccountObject.php");
+}elseif($_SESSION["AccountObject"] instanceof StudentOrRefugeeAccountObject){
+    header("Location: StudentOrRefugeeAccountObject.php");
+}
+
 $roaObject = $_SESSION["AccountObject"];
 
 echo $roaObject ->getUsername();
