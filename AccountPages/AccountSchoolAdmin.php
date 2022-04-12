@@ -28,9 +28,7 @@ if($_SESSION["AccountObject"] instanceof RefugeeOrganizationAccountObject){
 $schoolObject = $_SESSION["AccountObject"];
 
 echo $schoolObject ->getUsername();
-echo $schoolObject->getPassword();
 echo $schoolObject ->getAdminFirstName();
 echo $schoolObject ->getAdminLastName();
 echo $schoolObject ->getSchool();
 echo $schoolObject ->getAddress();
-echo $schoolObject ->getAccountType();
