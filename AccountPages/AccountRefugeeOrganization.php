@@ -28,9 +28,7 @@ if ($_SESSION["AccountObject"] instanceof SchoolAccountObject){
 $roaObject = $_SESSION["AccountObject"];
 
 echo $roaObject ->getUsername();
-echo $roaObject->getPassword();
 echo $roaObject ->getAdminFirstName();
 echo $roaObject ->getAdminLastName();
 echo $roaObject ->getOrganization();
 echo $roaObject ->getAddress();
-echo $roaObject ->getAccountType();

@@ -17,14 +17,14 @@ $testObject->setAccountType("Student");
 //This is how you would set the other attributes.
 //Subjects and Hobbies/Interests are arrays
 $testObject->setAge(22);
-$testObject->setSubjects(["Math", "English"]);
+$testObject->setSubjects("Math");
 $testObject->setEthnicity("Indian");
-$testObject->setOrganization("NJIT");
+$testObject->setOrganizationOrSchool("NJIT");
 $testObject->setFirstName("Vishal");
 $testObject->setLastName("Shah");
 $testObject->setGender("Boy");
-$testObject->setLanguages(["English"]);
-$testObject->setInterestsAndHobbies(["Sports"]);
+$testObject->setLanguages("English");
+$testObject->setInterestsAndHobbies("Sports");
 
 
 
