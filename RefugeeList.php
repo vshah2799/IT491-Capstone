@@ -9,7 +9,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+
 <?php
 //Need to get Name, Gender, Age, Grade Level Going Off Of Current WireFrame For RefugeeList
 //Figure Out How To Include Headshot of Refugee
@@ -47,5 +47,7 @@ while($result = $allAccounts->fetch_assoc()) {
 }
 
 $objectList[0]->getUsername();
+
+$fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName();
 
 
