@@ -2,24 +2,22 @@
 
 class StudentOrRefugeeAccountObject
 {
-
+    private string $username;
+    private string $password;
+    private string $firstName;
+    private string $lastName;
     private int $age;
+    private string $organizationOrSchool;
+    private string $gender;
+    private string $ethnicity;
+    private string $languages;
     private int $grade;
+    private string $interestsAndHobbies;
 
+    private string $subjects;
     //Can be student or refugee
     private string $accountType;
 
-    private string $username;
-    private string $password;
-    private string $organizationOrSchool;
-    private string $firstName;
-    private string $lastName;
-    private string $gender;
-    private string $ethnicity;
-
-    private array $languages;
-    private array $interestsAndHobbies;
-    private array $subjects;
 
     /* Constructor doesn't work for some reason so not including it
     public function __construct($username, $password)
@@ -114,7 +112,7 @@ class StudentOrRefugeeAccountObject
      */
     public function getOrganizationOrSchool(): string
     {
-        return $this->organizationorschool;
+        return $this->organizationOrSchool;
     }
 
     /**
@@ -122,8 +120,9 @@ class StudentOrRefugeeAccountObject
      */
     public function setOrganizationOrSchool(string $organizationOrSchool): void
     {
-        $this->organizationorschool = $organizationOrSchool;
+        $this->organizationOrSchool = $organizationOrSchool;
     }
+
 
     /**
      * @return string
@@ -190,49 +189,49 @@ class StudentOrRefugeeAccountObject
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getLanguages(): array
+    public function getLanguages(): string
     {
         return $this->languages;
     }
 
     /**
-     * @param array $languages
+     * @param string $languages
      */
-    public function setLanguages(array $languages): void
+    public function setLanguages(string $languages): void
     {
         $this->languages = $languages;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getInterestsAndHobbies(): array
+    public function getInterestsAndHobbies(): string
     {
         return $this->interestsAndHobbies;
     }
 
     /**
-     * @param array $interestsAndHobbies
+     * @param string $interestsAndHobbies
      */
-    public function setInterestsAndHobbies(array $interestsAndHobbies): void
+    public function setInterestsAndHobbies(string $interestsAndHobbies): void
     {
         $this->interestsAndHobbies = $interestsAndHobbies;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getSubjects(): array
+    public function getSubjects(): string
     {
         return $this->subjects;
     }
 
     /**
-     * @param array $subjects
+     * @param string $subjects
      */
-    public function setSubjects(array $subjects): void
+    public function setSubjects(string $subjects): void
     {
         $this->subjects = $subjects;
     }

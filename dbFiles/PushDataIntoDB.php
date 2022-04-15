@@ -2,8 +2,8 @@
 
 //This function inserts the Account Object into the database.
 //The username and Account Type must be included
-function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject, $servername,$dbUsername,$password){
-    $conn = mysqli_connect($servername, $dbUsername, $password, "vs598");
+function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject){
+    $conn = mysqli_connect("sql2.njit.edu", "vs598", "7p984^KTdv@M8o^", "vs598");
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
@@ -11,7 +11,7 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject,
     $serializeObject = serialize($accountObject);
     $baseSixtyFourAccountObject = base64_encode($serializeObject);
 
-    if(!(getAccountObject($accountUsername, $accountType, "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^"))){
+    if(!(getAccountObject($accountUsername, $accountType))){
         $sql = "INSERT INTO Accounts (Username, AccountObject, AccountType)
         VALUES ('$accountUsername', '$baseSixtyFourAccountObject', '$accountType')";
         try{
@@ -37,8 +37,8 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject,
 
 //This function gets an Account Object where the username and Account Type match
 //This does not check if the password is correct,that must done in the logic after calling this function
-function getAccountObject($accountUsername, $accountType, $servername,$dbUsername,$password){
-    $conn = mysqli_connect($servername, $dbUsername, $password, "vs598");
+function getAccountObject($accountUsername, $accountType){
+    $conn = mysqli_connect("sql2.njit.edu", "vs598", "7p984^KTdv@M8o^", "vs598");
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
@@ -55,4 +55,22 @@ function getAccountObject($accountUsername, $accountType, $servername,$dbUsernam
     } else {
         return FALSE;
     }
+}
+
+function getAllAccounts($accountType){
+    $conn = mysqli_connect("sql2.njit.edu", "vs598", "7p984^KTdv@M8o^", "vs598");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    $sql = "SELECT AccountObject FROM Accounts Where AccountType='$accountType'";
+
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        return $result;
+    } else {
+        return FALSE;
+    }
+
 }
