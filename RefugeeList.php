@@ -9,6 +9,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+<div id="">
+    Name
+    <href> </href>
+</div>
 </html>
 <?php
 //Need to get Name, Gender, Age, Grade Level Going Off Of Current WireFrame For RefugeeList
@@ -17,16 +21,22 @@
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 include("dbFiles/PushDataIntoDB.php");
-include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+include("dbFiles/StudentOrRefugeeAccountObject.php");
 
-$result = $db->query("SELECT $firstname,$lastname,$gender,$age,$grade FROM users where 'refugee'=$accountType");
+$allAccounts = getAllAccounts("Refugee");
+$objectList = array();
 
-while ($row = fetch_assoc($result)) {
-    echo $row['firstname'] . "<br />";
-    echo $row['lastname'] . "<br />";
-    echo $row['gender'] . "<br />";
-    echo $row['age'] . "<br />";
-    echo $row['grade'] . "<br />";
+while($result = $allAccounts->fetch_assoc()) {
+    $accountObject = $result["AccountObject"];
+    $accountObject = base64_decode($accountObject);
+    $accountObject = unserialize($accountObject);
+    array_push($objectList, $accountObject);
+}
+while($objectList = fetch_assoc($result)){
+    echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
+    echo $objectList[0]->getGender() . "<br />";
+    echo $objectList[0]->getAge() . "<br />";
+    echo $objectList[0]->getGrade() . "<br />";
 }
 
 /*
@@ -36,16 +46,5 @@ while ($row = fetch_assoc($result)) {
  echo "<img href='$imgPath'>;
 */
 
-$allAccounts = getAllAccounts("Student");
-$objectList = array();
-
-while($result = $allAccounts->fetch_assoc()) {
-    $accountObject = $result["AccountObject"];
-    $accountObject = base64_decode($accountObject);
-    $accountObject = unserialize($accountObject);
-    array_push($objectList, $accountObject);
-}
-
-$objectList[0]->getUsername();
 
 

@@ -17,24 +17,30 @@
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 include("dbFiles/PushDataIntoDB.php");
-include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.
+include("dbFiles/StudentOrRefugeeAccountObject.php");
 
-//require clarification on whether to use the getAccountObject function created in PushDataIntoDB.php file
+$allAccounts = getAllAccounts("Refugee");
+$objectList = array();
 
-$result = $db->query("SELECT $firstname,$lastname,$age,$grade,$interestsAndHobbies,$subjects FROM users where 'student'=$accountType && Username='$accountUsername' "); //Need to add a check so that it only pulls the account data of the specific refugee that was clicked on
-
-while ($row = fetch_assoc($result)) {
-    echo $row['firstname'] . "<br />";
-    echo $row['lastname'] . "<br />";
-    echo $row['age'] . "<br />";
-    echo $row['grade'] . "<br />";
-    echo $row['subjects'] . "<br />";
-    echo $row['interestsAndHobbies'] . "<br />";
-
+while($result = $allAccounts->fetch_assoc()) {
+    $accountObject = $result["AccountObject"];
+    $accountObject = base64_decode($accountObject);
+    $accountObject = unserialize($accountObject);
+    array_push($objectList, $accountObject);
+}
+while($objectList = fetch_assoc($result)){
+    echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
+    echo $objectList[0]->getAge() . "<br />";
+    echo $objectList[0]->getGrade() . "<br />";
+    echo $objectList[0]->getSubjects() . "<br />";
+    echo $objectList[0]->getInterestesAndHobbies() . "<br />";
 }
 
+/*
 //Never worked with images/profile pictures in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
 SELECT imgpath FROM imgpathstable WHERE $username = $_SESSION["username"];
 //display it with something like :
  echo "<img href='$imgPath'>;
+*/
+
 ?>
