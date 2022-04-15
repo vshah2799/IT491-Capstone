@@ -9,15 +9,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-<div id="">
-    Name
-    <href> </href>
+<div id="test">
+    <a href="https://app.axure.cloud/app/project/hynqiv/preview/r9t4tz"> Name </a>
 </div>
 </html>
 <?php
-//Need to get Name, Gender, Age, Grade Level Going Off Of Current WireFrame For RefugeeList
-//Figure Out How To Include Headshot of Refugee
-// has to be $accountType = Refugee
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 include("dbFiles/PushDataIntoDB.php");
@@ -45,6 +41,6 @@ while($objectList = fetch_assoc($result)){
 //display it with something like :
  echo "<img href='$imgPath'>;
 */
-
+?>
 
 

@@ -9,9 +9,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-<div id="">
-    Name
-    <href> </href>
+<div id="test2">
+    <a href="https://app.axure.cloud/app/project/hynqiv/preview/qg8as9"> Name </a>
 </div>
 </html>
 <?php
@@ -20,10 +19,11 @@
 // has to be $accountType = Student
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
-include("dbFiles/PushDataIntoDB.php");
+include('dbFiles/PushDataIntoDB.php');
 include("dbFiles/StudentOrRefugeeAccountObject.php");
 
-$allAccounts = getAllAccounts("Refugee");
+
+$allAccounts = getAllAccounts($accountType = 'Refugee');
 $objectList = array();
 
 while($result = $allAccounts->fetch_assoc()) {
@@ -32,7 +32,7 @@ while($result = $allAccounts->fetch_assoc()) {
     $accountObject = unserialize($accountObject);
     array_push($objectList, $accountObject);
 }
-while($objectList = fetch_assoc($result)){
+while($objectList = mysqli_fetch_assoc($result)){
     echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
     echo $objectList[0]->getGender() . "<br />";
     echo $objectList[0]->getAge() . "<br />";
