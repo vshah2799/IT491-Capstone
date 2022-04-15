@@ -1,14 +1,22 @@
+
 <?php
-$to = "xyz@somedomain.com";
+include ('dbFiles/PushDataIntoDB.php');
+include ('dbFiles/StudentOrRefugeeAccountObject.php');
+session_start();
+if(!isset($_SESSION['username']))
+{
+    header("location: index.php");
+}
+$name=$_SESSION['username'];
+
+//current issue, not sure how to grab the identity of the person they want to conenct with
+
+$to = "xyz@somedomain.com"; //whatever the organization domain or our domain is
 $subject = "This is subject";
 
 $message = "<b>This is HTML message.</b>";
-$message .= "<h1>This is headline.</h1>";
 
-$header = "From:abc@somedomain.com \r\n";
-$header .= "Cc:afgh@somedomain.com \r\n";
-$header .= "MIME-Version: 1.0\r\n";
-$header .= "Content-type: text/html\r\n";
+$header = "From:$name@somedomain.com \r\n";
 
 $retval = mail($to,$subject,$message,$header);
 
@@ -18,3 +26,4 @@ if( $retval == true ) {
     echo "The mail could not be sent";
 }
 ?>
+

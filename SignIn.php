@@ -12,6 +12,7 @@
 </body>
 </html>
 <?php
+
 include ('dbFiles/PushDataIntoDB.php');
 include ('dbFiles/StudentOrRefugeeAccountObject.php');
 
