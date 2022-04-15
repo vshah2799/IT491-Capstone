@@ -14,6 +14,7 @@
 //Need to get Name, Age, School, Grade Level, Skills(Subjects), Hobbies Going Off Of Current WireFrame For StudentIndividual
 //Figure Out How To Include Headshot of Student
 // has to be $accountType = Student
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 include("dbFiles/PushDataIntoDB.php");
 include("dbFiles/StudentOrRefugeeAccountObject.php"); //Unsure if both of these are needed, included for now.

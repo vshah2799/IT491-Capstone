@@ -9,7 +9,7 @@
 <div class="mx-auto" style="width: 200px;">
     <a href="SignUpRefugeeOne.php" type="button" class="btn btn-primary" >Refugee</a>
     <a href="SignUpStudentOne.php" type="button" class="btn btn-primary" >Student</a>
-    <a href="SignUpForRefugeeOrganization.php" type="button" class="btn btn-primary" >Refugee Organization</a>
+    <a href="SignUpForRefugeeOrganizationOne.php" type="button" class="btn btn-primary" >Refugee Organization</a>
     <a href="SignUpForSchool.php" type="button" class="btn btn-primary" >School</a>
 </div>
 
@@ -18,8 +18,10 @@
 </body>
 </html>
 <?php
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 
 if(isset($_SESSION["Username"])){
     header("Location: SignIn.php");
 }
+

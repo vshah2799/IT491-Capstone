@@ -16,9 +16,8 @@ include ('dbFiles/PushDataIntoDB.php');
 include ('dbFiles/StudentOrRefugeeAccountObject.php');
 
 
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
-
-
 //Function for validating data, may not be needed
 if(isset($_POST['username']) && isset($_POST['password'])) {
 
