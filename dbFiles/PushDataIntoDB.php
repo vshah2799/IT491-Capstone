@@ -11,15 +11,27 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject,
     $serializeObject = serialize($accountObject);
     $baseSixtyFourAccountObject = base64_encode($serializeObject);
 
-    $sql = "INSERT INTO Accounts (Username, AccountObject, AccountType)
-    VALUES ('$accountUsername', '$baseSixtyFourAccountObject', '$accountType')";
-
-    if ($conn->query($sql) === TRUE) {
-        mysqli_close($conn);;
-        return TRUE;
-    } else {
-        mysqli_close($conn);
-        return FALSE;
+    if(!(getAccountObject($accountUsername, $accountType, "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^"))){
+        $sql = "INSERT INTO Accounts (Username, AccountObject, AccountType)
+        VALUES ('$accountUsername', '$baseSixtyFourAccountObject', '$accountType')";
+        try{
+            $conn->query($sql);
+            mysqli_close($conn);
+            return TRUE;
+        } catch(Exception $e) {
+            mysqli_close($conn);
+            return "Error has occurred creating account";
+        }
+    }else{
+        $sql = "UPDATE Accounts SET AccountObject='$baseSixtyFourAccountObject' WHERE Username='$accountUsername'";
+        try{
+            $conn->query($sql);
+            mysqli_close($conn);
+            return TRUE;
+        } catch(Exception $e) {
+            mysqli_close($conn);
+            return "Error has occurred creating account";
+        }
     }
 }
 
@@ -31,6 +43,7 @@ function getAccountObject($accountUsername, $accountType, $servername,$dbUsernam
         die("Connection failed: " . mysqli_connect_error());
     }
 
+
     $sql = "SELECT AccountObject FROM Accounts Where Username='$accountUsername' AND AccountType='$accountType'";
     $result = $conn->query($sql);
 
@@ -39,7 +52,6 @@ function getAccountObject($accountUsername, $accountType, $servername,$dbUsernam
         $row = $result->fetch_assoc();
         $accountObject = base64_decode($row["AccountObject"]);
         return unserialize($accountObject);
-
     } else {
         return FALSE;
     }
