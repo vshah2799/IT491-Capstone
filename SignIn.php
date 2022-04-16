@@ -58,7 +58,7 @@ else if (empty($email)) {
     exit();
 }
 
-$accountObject = getAccountObject($username, "Student", "sql2.njit.edu", "vs598", "7p984^KTdv@M8o^");
+$accountObject = getAccountObject($username, "Student");
 
 if (($accountObject->getPassword() == $password) && ($accountObject->getUsername() == $username)) {
 
