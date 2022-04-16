@@ -19,6 +19,10 @@ session_start();
 include("dbFiles/PushDataIntoDB.php");
 include("dbFiles/StudentOrRefugeeAccountObject.php");
 
+
+
+$_POST="";
+
 $allAccounts = getAllAccounts("Student");
 $objectList = array();
 

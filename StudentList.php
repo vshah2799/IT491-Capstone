@@ -33,6 +33,8 @@ while($result = $allAccounts->fetch_assoc()) {
     array_push($objectList, $accountObject);
 }
 while($objectList = mysqli_fetch_assoc($result)){
+
+    echo '<a href="StudentIndividual.php"> Name </a id="$ojectList->getusername()">';
     echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
     echo $objectList[0]->getGender() . "<br />";
     echo $objectList[0]->getAge() . "<br />";
