@@ -32,19 +32,22 @@ while($result = $allAccounts->fetch_assoc()) {
     $accountObject = unserialize($accountObject);
     array_push($objectList, $accountObject);
 }
-while($objectList = mysqli_fetch_assoc($result)){
 
-    echo '<a href="StudentIndividual.php"> Name </a id="$ojectList->getusername()">';
+while($objectList = mysqli_fetch_assoc($result)){
     echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
+    echo '<a href="StudentIndividual.php"> Name2 </a id="$objectList->getusername()">';
     echo $objectList[0]->getGender() . "<br />";
     echo $objectList[0]->getAge() . "<br />";
     echo $objectList[0]->getOrganizationOrSchool() . "<br />";
+
 }
-/*
-//Never worked with images/profile pictures in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
-SELECT imgpath FROM imgpathstable WHERE $username = $_SESSION["username"];
-//display it with something like :
- echo "<img href='$imgPath'>;
-*/
+
+if (isset($_SESSION[$accountType.'Student']))
+{
+    echo '<a href="StudentIndividual.php"> Student Page </a id="$objectList->getusername()">';
+}
+else {
+    echo '<a href="StudentList.php" > Student List </a>';
+}
 
 ?>
