@@ -619,6 +619,7 @@
   font-style:normal;
   font-size:60px;
   color:#FFFFFF;
+  text-align:center;
 }
 #u16 {
   border-width:0px;
@@ -633,6 +634,7 @@
   font-style:normal;
   font-size:60px;
   color:#FFFFFF;
+  text-align:center;
 }
 #u16 .text {
   position:absolute;
