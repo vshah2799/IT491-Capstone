@@ -33,12 +33,23 @@ while($result = $allAccounts->fetch_assoc()) {
     $accountObject = unserialize($accountObject);
     array_push($objectList, $accountObject);
 }
+
+
+
 while($objectList = fetch_assoc($result)){
     echo $fullName = $objectList[0]->getFirstName() . " " . $objectList[0]->getLastName() . "<br />";
     echo $objectList[0]->getAge() . "<br />";
     echo $objectList[0]->getGrade() . "<br />";
     echo $objectList[0]->getSubjects() . "<br />";
     echo $objectList[0]->getInterestesAndHobbies() . "<br />";
+}
+// Does this work??????
+while($objectList = fetch_assoc($result)){
+    echo $_SESSION['firstname'] . " " . $_SESSION['lastname'];
+    echo $_SESSION['age'];
+    echo $_SESSION['grade'];
+    echo $_SESSION['subjects'];
+    echo $_SESSION['interestsandhobbies'];
 }
 
 /*

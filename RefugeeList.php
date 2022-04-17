@@ -36,13 +36,23 @@ while($objectList = fetch_assoc($result)){
     echo $objectList[0]->getGrade() . "<br />";
 }
 
+// Does this work???
 if (isset($_SESSION[$accountType.'Refugee']))
 {
+    //$_Session['Refugee'] = $objectList
+    $_SESSION['firstname'] = getFirstName();
+    $_SESSION['lastname'] = getLastName();
+    $_SESSION['age'] = getAge();
+    $_SESSION['grade'] = getGrade();
+    $_SESSION['subjects'] = getSubects();
+    $_SESSION['interestsandhobbies'] = getInterestsandHobbies();
     echo '<a href="RefugeeList.php"> Refugee Page </a id="$objectList->getusername()">';
 }
 else {
     echo '<a href="RefugeeList.php" > Refugee List </a>';
 }
+
+
 ?>
 
 
