@@ -4,8 +4,8 @@
     <title>Sign Up - Refugee 1</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
     <link href="files/sign_up_-_refugee_1/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-3.2.1.min.js"></script>
@@ -73,67 +73,18 @@
         </div>
       </div>
 
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u61" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="641" data-top="370" data-width="300" data-height="47">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u62" class="ax_default text_field" data-label="Input Field">
-          <div id="u62_div" class=""></div>
-          <input id="u62_input" type="text" value="" class="u62_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u63" class="ax_default label" data-label="Input Label">
-          <div id="u63_div" class=""></div>
-          <div id="u63_text" class="text ">
-            <p><span>Email</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u64" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="641" data-top="448" data-width="300" data-height="47">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u65" class="ax_default text_field" data-label="Input Field">
-          <div id="u65_div" class=""></div>
-          <input id="u65_input" type="text" value="" class="u65_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u66" class="ax_default label" data-label="Input Label">
-          <div id="u66_div" class=""></div>
-          <div id="u66_text" class="text ">
-            <p><span style="color:#767676;">Username - </span><span style="color:#D9001B;">Required</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u67" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="641" data-top="526" data-width="300" data-height="47">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u68" class="ax_default text_field" data-label="Input Field">
-          <div id="u68_div" class=""></div>
-          <input id="u68_input" type="text" value="" class="u68_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u69" class="ax_default label" data-label="Input Label">
-          <div id="u69_div" class=""></div>
-          <div id="u69_text" class="text ">
-            <p><span style="color:#767676;">Password - </span><span style="color:#D9001B;">Required</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u70" class="ax_default primary_button1">
-        <div id="u70_div" class=""></div>
-        <div id="u70_text" class="text ">
-          <p><span>Submit</span></p>
-        </div>
-      </div>
+      <form>
+		  <div id="form-group-1">
+			<label id="label1" for="Username">Username</label>
+			<input type="username" class="form-control" name="Username" required>
+		  </div>
+		  <div id="form-group-2">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" name="Password" required>
+		  </div>
+		  </div>
+		  <button type="submit" class="btn btn-secondary">Submit</button>
+	  </form>
 
       <!-- Navigation Bar (Group) -->
       <div id="u71" class="ax_default" data-label="Navigation Bar" data-left="0" data-top="0" data-width="1500" data-height="152">

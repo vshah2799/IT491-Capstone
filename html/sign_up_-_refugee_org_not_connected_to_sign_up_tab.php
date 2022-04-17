@@ -49,103 +49,6 @@
   <body>
     <div id="base" class="">
 
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u300" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="499" data-top="589" data-width="503" data-height="80">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u301" class="ax_default text_field" data-label="Input Field">
-          <div id="u301_div" class=""></div>
-          <input id="u301_input" type="text" value="" class="u301_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u302" class="ax_default label" data-label="Input Label">
-          <div id="u302_div" class=""></div>
-          <div id="u302_text" class="text ">
-            <p><span>Admin Last Name</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u303" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="499" data-top="719" data-width="503" data-height="81">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u304" class="ax_default text_field" data-label="Input Field">
-          <div id="u304_div" class=""></div>
-          <input id="u304_input" type="text" value="" class="u304_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u305" class="ax_default label" data-label="Input Label">
-          <div id="u305_div" class=""></div>
-          <div id="u305_text" class="text ">
-            <p><span>Username</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u306" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="499" data-top="851" data-width="503" data-height="80">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u307" class="ax_default text_field" data-label="Input Field">
-          <div id="u307_div" class=""></div>
-          <input id="u307_input" type="text" value="" class="u307_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u308" class="ax_default label" data-label="Input Label">
-          <div id="u308_div" class=""></div>
-          <div id="u308_text" class="text ">
-            <p><span>Temporary Password</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u309" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="499" data-top="982" data-width="503" data-height="79">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u310" class="ax_default text_field" data-label="Input Field">
-          <div id="u310_div" class=""></div>
-          <input id="u310_input" type="text" value="" class="u310_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u311" class="ax_default label" data-label="Input Label">
-          <div id="u311_div" class=""></div>
-          <div id="u311_text" class="text ">
-            <p><span>Address</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u312" class="ax_default primary_button1">
-        <div id="u312_div" class=""></div>
-        <div id="u312_text" class="text ">
-          <p><span>Submit</span></p>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u313" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="0" data-top="-12" data-width="1486" data-height="423">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u314" class="ax_default text_field" data-label="Input Field">
-          <div id="u314_div" class=""></div>
-          <input id="u314_input" type="text" value="" class="u314_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u315" class="ax_default label" data-label="Input Label">
-          <div id="u315_div" class=""></div>
-          <div id="u315_text" class="text ">
-            <p><span>Organization</span></p>
-          </div>
-        </div>
-
         <!-- Unnamed (Header) -->
 
         <!-- Unnamed (Rectangle) -->
@@ -214,23 +117,34 @@
         <div id="u316" style="display:none; visibility:hidden;"></div>
       </div>
 
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u325" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="499" data-top="460" data-width="503" data-height="80">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u326" class="ax_default text_field" data-label="Input Field">
-          <div id="u326_div" class=""></div>
-          <input id="u326_input" type="text" value="" class="u326_input"/>
+      <form action="SignUpForRefugeeOrganizationTwo.php" method="post">
+        <div class="mb-3">
+            <label  class="form-label">Username</label>
+            <input type="username" class="form-control" name="Username" required >
         </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u327" class="ax_default label" data-label="Input Label">
-          <div id="u327_div" class=""></div>
-          <div id="u327_text" class="text ">
-            <p><span>&nbsp;Admin First Name</span></p>
-          </div>
+        <div class="mb-3">
+            <label  class="form-label">Password</label>
+            <input type="password" class="form-control" name="Password" required >
         </div>
-      </div>
+        <div class="mb-3">
+            <label class="form-label">Admin First Name</label>
+            <input class="form-control" name="AdminFirstName" required >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Admin Last Name</label>
+            <input class="form-control" name="AdminLastName" required >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Organization</label>
+            <input class="form-control" name="Organization" required >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input class="form-control" name="Address" required >
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+
 
       <!-- Navigation Bar (Group) -->
       <div id="u328" class="ax_default" data-label="Navigation Bar" data-left="0" data-top="0" data-width="1500" data-height="152">

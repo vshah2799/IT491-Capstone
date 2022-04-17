@@ -73,67 +73,23 @@
         </div>
       </div>
 
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u149" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="593" data-top="374" data-width="300" data-height="80">
+      <form action="SignUpRefugeeTwo.php" method="post">
 
-        <!-- Input Field (Text Field) -->
-        <div id="u150" class="ax_default text_field" data-label="Input Field">
-          <div id="u150_div" class=""></div>
-          <input id="u150_input" type="text" value="" class="u150_input"/>
+        <div class="mb-3">
+            <label  class="form-label">Email</label>
+            <input class="form-control" name="Email" required >
         </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u151" class="ax_default label" data-label="Input Label">
-          <div id="u151_div" class=""></div>
-          <div id="u151_text" class="text ">
-            <p><span style="color:#767676;">Email (MUST BE SCHOOL EMAIL) - </span><span style="color:#D9001B;">Required</span></p>
-          </div>
+        <div class="mb-3">
+            <label  class="form-label">Username</label>
+            <input type="username" class="form-control" name="Username" required >
         </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u152" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="593" data-top="485" data-width="300" data-height="47">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u153" class="ax_default text_field" data-label="Input Field">
-          <div id="u153_div" class=""></div>
-          <input id="u153_input" type="text" value="" class="u153_input"/>
+        <div class="mb-3">
+            <label  class="form-label">Password</label>
+            <input type="password" class="form-control" name="Password" required >
         </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u154" class="ax_default label" data-label="Input Label">
-          <div id="u154_div" class=""></div>
-          <div id="u154_text" class="text ">
-            <p><span style="color:#767676;">Username - </span><span style="color:#D9001B;">Required</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Text Field & Labels (Outlined) (Group) -->
-      <div id="u155" class="ax_default" data-label="Text Field &amp; Labels (Outlined)" data-left="593" data-top="563" data-width="300" data-height="47">
-
-        <!-- Input Field (Text Field) -->
-        <div id="u156" class="ax_default text_field" data-label="Input Field">
-          <div id="u156_div" class=""></div>
-          <input id="u156_input" type="text" value="" class="u156_input"/>
-        </div>
-
-        <!-- Input Label (Rectangle) -->
-        <div id="u157" class="ax_default label" data-label="Input Label">
-          <div id="u157_div" class=""></div>
-          <div id="u157_text" class="text ">
-            <p><span style="color:#767676;">Password - </span><span style="color:#D9001B;">Required</span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u158" class="ax_default primary_button1">
-        <div id="u158_div" class=""></div>
-        <div id="u158_text" class="text ">
-          <p><span>Submit</span></p>
-        </div>
-      </div>
+    
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
 
       <!-- Navigation Bar (Group) -->
       <div id="u159" class="ax_default" data-label="Navigation Bar" data-left="0" data-top="0" data-width="1500" data-height="152">
@@ -146,6 +102,7 @@
           </div>
         </div>
       </div>
+
 
       <!-- Unnamed (Rectangle) -->
       <div id="u161" class="ax_default">

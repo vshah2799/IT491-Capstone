@@ -4,7 +4,6 @@
     <title>Student List page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
     <link href="files/student_list_page/styles.css" type="text/css" rel="stylesheet"/>
@@ -629,7 +628,6 @@
 
       <!-- Unnamed (Shape) -->
       <div id="u487" class="ax_default icon">
-        <a href="accounts_page_-_refugee.php"/a>
         <img id="u487_img" class="img " src="images/home/u27.svg"/>
         <div id="u487_text" class="text " style="display:none; visibility: hidden">
           <p></p>
