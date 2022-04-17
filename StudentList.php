@@ -42,8 +42,16 @@ while($objectList = mysqli_fetch_assoc($result)){
 
 }
 
+// Does this work???
 if (isset($_SESSION[$accountType.'Student']))
 {
+    //$_Session['Refugee'] = $objectList
+    $_SESSION['firstname'] = getFirstName();
+    $_SESSION['lastname'] = getLastName();
+    $_SESSION['age'] = getAge();
+    $_SESSION['school'] = getOrganizationOrSchool();
+    $_SESSION['subjects'] = getSubjects();
+    $_SESSION['interestsandhobbies'] = getInterestsAndHobbies();
     echo '<a href="StudentIndividual.php"> Student Page </a id="$objectList->getusername()">';
 }
 else {

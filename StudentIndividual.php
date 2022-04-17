@@ -42,6 +42,16 @@ while($objectList = fetch_assoc($result)){
     echo $objectList[0]->getInterestesAndHobbies() . "<br />";
 }
 
+//Does This work???
+while($objectList = fetch_assoc($result)){
+    echo $_SESSION['firstname'] . " " . $_SESSION['lastname'];
+    echo $_SESSION['age'];
+    echo $_SESSION['school'];
+    echo $_SESSION['subjects'];
+    echo $_SESSION['interestsandhobbies'];
+}
+
+
 /*
 //Never worked with images/profile pictures in PHP but a quick google search shows we have to store the image path in the DB and then call it like so
 SELECT imgpath FROM imgpathstable WHERE $username = $_SESSION["username"];

@@ -43,6 +43,7 @@ while($objectList = fetch_assoc($result)){
     echo $objectList[0]->getSubjects() . "<br />";
     echo $objectList[0]->getInterestesAndHobbies() . "<br />";
 }
+
 // Does this work??????
 while($objectList = fetch_assoc($result)){
     echo $_SESSION['firstname'] . " " . $_SESSION['lastname'];
