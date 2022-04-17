@@ -4,6 +4,7 @@
     <title>Accounts page - Student</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
     <link href="files/accounts_page_-_student/styles.css" type="text/css" rel="stylesheet"/>
@@ -160,6 +161,56 @@
             <!-- Unnamed (Group) -->
             <div id="u619" class="ax_default" data-left="-86" data-top="-166" data-width="1278" data-height="1359">
 
+              <form action="AccountStudentThree.php" method="post">
+
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input class="form-control" name="Password"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" name="FirstName"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" name="LastName"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Age</label>
+                    <input class="form-control" name="Age"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">School</label>
+                    <input class="form-control" name="School"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <input class="form-control" name="Gender"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ethnicity</label>
+                    <input class="form-control" name="Ethnicity"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Languages</label>
+                    <input class="form-control" name="Languages"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Grade</label>
+                    <input class="form-control" name="Grade"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Interests and Hobbies</label>
+                    <input class="form-control" name="InterestsAndHobbies"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Subjects</label>
+                    <input class="form-control" name="Subjects"  >
+                </div>
+            
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+
               <!-- Unnamed (Image) -->
               <div id="u620" class="ax_default image">
                 <img id="u620_img" class="img " src="images/student_list_page/u433.png"/>
@@ -177,46 +228,6 @@
               </div>
 
               <!-- Unnamed (Rectangle) -->
-              <div id="u622" class="ax_default paragraph">
-                <div id="u622_div" class=""></div>
-                <div id="u622_text" class="text ">
-                  <p><span>School: </span></p>
-                </div>
-              </div>
-
-              <!-- Unnamed (Rectangle) -->
-              <div id="u623" class="ax_default paragraph">
-                <div id="u623_div" class=""></div>
-                <div id="u623_text" class="text ">
-                  <p><span>Age: </span></p>
-                </div>
-              </div>
-
-              <!-- Unnamed (Rectangle) -->
-              <div id="u624" class="ax_default paragraph">
-                <div id="u624_div" class=""></div>
-                <div id="u624_text" class="text ">
-                  <p><span>Level Of Education:</span></p>
-                </div>
-              </div>
-
-              <!-- Unnamed (Rectangle) -->
-              <div id="u625" class="ax_default paragraph">
-                <div id="u625_div" class=""></div>
-                <div id="u625_text" class="text ">
-                  <p><span>About me</span></p>
-                </div>
-              </div>
-
-              <!-- Unnamed (Rectangle) -->
-              <div id="u626" class="ax_default paragraph">
-                <div id="u626_div" class=""></div>
-                <div id="u626_text" class="text ">
-                  <p><span>Interests</span></p>
-                </div>
-              </div>
-
-              <!-- Unnamed (Rectangle) -->
               <div id="u627" class="ax_default primary_button">
                 <div id="u627_div" class=""></div>
                 <div id="u627_text" class="text ">
@@ -224,61 +235,14 @@
                 </div>
               </div>
 
-              <!-- Unnamed (Rectangle) -->
-              <div id="u628" class="ax_default paragraph">
-                <div id="u628_div" class=""></div>
-                <div id="u628_text" class="text ">
-                  <p><span>Skills</span></p>
-                </div>
-              </div>
+              
             </div>
 
-            <!-- Unnamed (Rectangle) -->
-            <div id="u629" class="ax_default primary_button">
-              <div id="u629_div" class=""></div>
-              <div id="u629_text" class="text ">
-                <p><span>Save Changes</span></p>
-              </div>
-            </div>
-
-            <!-- Unnamed (Text Field) -->
-            <div id="u630" class="ax_default text_field">
-              <div id="u630_div" class=""></div>
-              <input id="u630_input" type="text" value="" class="u630_input"/>
-            </div>
-
-            <!-- Unnamed (Text Field) -->
-            <div id="u631" class="ax_default text_field">
-              <div id="u631_div" class=""></div>
-              <input id="u631_input" type="text" value="" class="u631_input"/>
-            </div>
-
-            <!-- Unnamed (Text Field) -->
-            <div id="u632" class="ax_default text_field">
-              <div id="u632_div" class=""></div>
-              <input id="u632_input" type="text" value="" class="u632_input"/>
-            </div>
-
-            <!-- Unnamed (Text Area) -->
-            <div id="u633" class="ax_default text_area">
-              <div id="u633_div" class=""></div>
-              <textarea id="u633_input" class="u633_input"></textarea>
-            </div>
-
-            <!-- Unnamed (Text Area) -->
-            <div id="u634" class="ax_default text_area">
-              <div id="u634_div" class=""></div>
-              <textarea id="u634_input" class="u634_input"></textarea>
-            </div>
-
-            <!-- Unnamed (Text Area) -->
-            <div id="u635" class="ax_default text_area">
-              <div id="u635_div" class=""></div>
-              <textarea id="u635_input" class="u635_input"></textarea>
-            </div>
           </div>
         </div>
       </div>
+
+      
 
       <!-- Unnamed (Rectangle) -->
       <div id="u636" class="ax_default heading_2">

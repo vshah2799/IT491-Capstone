@@ -8,6 +8,21 @@
   margin-right:auto;
   text-align:left;
 }
+
+form {
+  border-width:0px;
+  position:absolute;
+  left:641px;
+  top:379px;
+  width:300px;
+  height:23px;
+  font-family:"Roboto", sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  color:#333333;
+}
+
 .form_sketch {
   border-color:transparent;
   background-color:transparent;
