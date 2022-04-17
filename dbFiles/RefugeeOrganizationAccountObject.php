@@ -10,6 +10,24 @@ class RefugeeOrganizationAccountObject
     private string $password;
     private string $address;
     private string $email;
+    private string $imageURL;
+
+    /**
+     * @return string
+     */
+    public function getImageURL(): string
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param string $imageURL
+     */
+    public function setImageURL(string $imageURL): void
+    {
+        $this->imageURL = $imageURL;
+    }
+
 
     /**
      * @return string
