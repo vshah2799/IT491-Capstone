@@ -44,8 +44,8 @@ if (isset($_SESSION[$accountType.'Refugee']))
     $_SESSION['lastname'] = getLastName();
     $_SESSION['age'] = getAge();
     $_SESSION['grade'] = getGrade();
-    $_SESSION['subjects'] = getSubects();
-    $_SESSION['interestsandhobbies'] = getInterestsandHobbies();
+    $_SESSION['subjects'] = getSubjects();
+    $_SESSION['interestsandhobbies'] = getInterestsAndHobbies();
     echo '<a href="RefugeeList.php"> Refugee Page </a id="$objectList->getusername()">';
 }
 else {
