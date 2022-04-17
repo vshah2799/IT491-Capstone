@@ -15,7 +15,6 @@ Student account updated
 </body>
 </html>
 <?php
-$passwordFromForm = $_POST["Password"];
 $firstNameFromForm = $_POST["FirstName"];
 $lastNameFromForm = $_POST["LastName"];
 $ageFromForm = intval($_POST["Age"]);
@@ -29,9 +28,6 @@ $subjectsFromForm = $_POST["Subjects"];
 
 $studentObject = new StudentOrRefugeeAccountObject();
 
-if(!empty($passwordFromForm)){
-    $studentObject->setPassword($_SESSION["Password"]);
-}
 if(!empty($firstNameFromForm)){
     $studentObject->setFirstName($firstNameFromForm);
 }

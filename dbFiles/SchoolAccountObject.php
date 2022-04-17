@@ -10,6 +10,23 @@ class SchoolAccountObject
     private string $username;
     private string $password;
     private string $address;
+    private string $schoolEmail;
+
+    /**
+     * @return string
+     */
+    public function getSchoolEmail(): string
+    {
+        return $this->schoolEmail;
+    }
+
+    /**
+     * @param string $schoolEmail
+     */
+    public function setSchoolEmail(string $schoolEmail): void
+    {
+        $this->schoolEmail = $schoolEmail;
+    }
 
     /**
      * @return string

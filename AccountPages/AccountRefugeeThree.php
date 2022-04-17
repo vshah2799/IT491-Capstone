@@ -29,7 +29,6 @@ if($_SESSION["AccountObject"] instanceof RefugeeOrganizationAccountObject){
     header("Location: SchoolAccountObject.php");
 }
 
-$passwordFromForm = $_POST["Password"];
 $firstNameFromForm = $_POST["FirstName"];
 $lastNameFromForm = $_POST["LastName"];
 $ageFromForm = intval($_POST["Age"]);
@@ -43,9 +42,6 @@ $subjectsFromForm = $_POST["Subjects"];
 
 $refugeeObject = new StudentOrRefugeeAccountObject();
 
-if(!empty($passwordFromForm)){
-    $refugeeObject->setPassword($_SESSION["Password"]);
-}
 if(!empty($firstNameFromForm)){
     $refugeeObject->setFirstName($firstNameFromForm);
 }

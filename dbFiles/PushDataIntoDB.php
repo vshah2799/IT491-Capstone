@@ -67,7 +67,7 @@ function getAllAccounts($accountType){
 
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+    if ($result->num_rows >= 0) {
         return $result;
     } else {
         return FALSE;
