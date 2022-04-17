@@ -2841,7 +2841,7 @@ var toolBarOnly = true;
             try {
                 //Chrome 45 (Version 45.0.2454.85 m) started throwing an error here when generated locally (this only happens with sitemap open) which broke all interactions.
                 //try catch breaks the url adjusting nicely when the sitemap is open, but all interactions and forward and back buttons work.
-                //Uncaught SecurityError: Failed to execute 'replaceState' on 'History': A history state object with URL 'file:///C:/Users/Ian/Documents/Axure/HTML/Untitled/start.html#p=home' cannot be created in a document with origin 'null'.
+                //Uncaught SecurityError: Failed to execute 'replaceState' on 'History': A history state object with URL 'file:///C:/Users/Ian/Documents/Axure/HTML/Untitled/start.php#p=home' cannot be created in a document with origin 'null'.
                 window.history.replaceState(null, null, currentLocWithoutHash + newHash);
             } catch (ex) { }
         } else {
