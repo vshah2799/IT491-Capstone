@@ -629,6 +629,7 @@
 
       <!-- Unnamed (Shape) -->
       <div id="u487" class="ax_default icon">
+        <a href="accounts_page_-_refugee.php"/a>
         <img id="u487_img" class="img " src="images/home/u27.svg"/>
         <div id="u487_text" class="text " style="display:none; visibility: hidden">
           <p></p>
