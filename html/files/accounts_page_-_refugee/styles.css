@@ -8,6 +8,20 @@
   margin-right:auto;
   text-align:left;
 }
+
+form {
+  border-width:0px;
+  position:absolute;
+  left:375px;
+  top:191px;
+  width:396px;
+  height:63px;
+  font-family:"Raleway Bold", "Raleway", sans-serif;
+  font-weight:700;
+  font-style:normal;
+  font-size:35px;
+}
+
 .form_sketch {
   border-color:transparent;
   background-color:transparent;

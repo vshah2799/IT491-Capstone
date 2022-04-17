@@ -8,6 +8,63 @@
   margin-right:auto;
   text-align:left;
 }
+
+#Refugee {
+  border-width:0px;
+  position:absolute;
+  left:468px;
+  top:365px;
+  width:183px;
+  height:65px;
+  font-family:"Raleway Medium", "Raleway", sans-serif;
+  font-weight:500;
+  font-style:normal;
+  font-size:28px;
+  letter-spacing:0.4px;
+}
+
+#Student {
+  border-width:0px;
+  position:absolute;
+  left:823px;
+  top:365px;
+  width:176px;
+  height:65px;
+  font-family:"Raleway Medium", "Raleway", sans-serif;
+  font-weight:500;
+  font-style:normal;
+  font-size:28px;
+  letter-spacing:0.4px;
+}
+
+#Refugee-Org {
+  border-width:0px;
+  position:absolute;
+  left:454px;
+  top:505px;
+  width:210px;
+  height:92px;
+  font-family:"Raleway Medium", "Raleway", sans-serif;
+  font-weight:500;
+  font-style:normal;
+  font-size:28px;
+  letter-spacing:0.4px;
+}
+
+#School {
+  border-width:0px;
+  position:absolute;
+  left:806px;
+  top:505px;
+  width:210px;
+  height:92px;
+  font-family:"Raleway Medium", "Raleway", sans-serif;
+  font-weight:500;
+  font-style:normal;
+  font-size:28px;
+  letter-spacing:0.4px;
+}
+
 .form_sketch {
   border-color:transparent;
   background-color:transparent;

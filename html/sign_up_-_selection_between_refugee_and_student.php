@@ -68,22 +68,6 @@
           </div>
         </div>
 
-        <!-- Unnamed (Shape) -->
-        <div id="u33" class="ax_default primary_button1">
-          <img id="u33_img" class="img " src="images/sign_up_-_selection_between_refugee_and_student/u33.svg"/>
-          <div id="u33_text" class="text ">
-            <p><span>Refugee</span></p>
-          </div>
-        </div>
-
-        <!-- Unnamed (Rectangle) -->
-        <div id="u34" class="ax_default primary_button1">
-          <div id="u34_div" class=""></div>
-          <div id="u34_text" class="text ">
-            <p><span>Student</span></p>
-          </div>
-        </div>
-
         <!-- Unnamed (Rectangle) -->
         <div id="u35" class="ax_default heading_1">
           <div id="u35_div" class=""></div>
@@ -92,22 +76,13 @@
           </div>
         </div>
 
-        <!-- Unnamed (Shape) -->
-        <div id="u36" class="ax_default primary_button1">
-          <img id="u36_img" class="img " src="images/sign_up_-_selection_between_refugee_and_student/u36.svg"/>
-          <div id="u36_text" class="text ">
-            <p><span>School Administrator</span></p>
-          </div>
-        </div>
+      <div class="mx-auto" style="width: 200px;">
+        <a href="SignUpRefugeeOne.php" id="Refugee" type="button" class="btn btn-secondary" >Refugee</a>
+        <a href="SignUpStudentOne.php" id="Student" type="button" class="btn btn-secondary" >Student</a>
+        <a href="SignUpForRefugeeOrganizationOne.php" id="Refugee-Org" type="button" class="btn btn-secondary" >Refugee Organization</a>
+        <a href="SignUpForSchool.php" type="button" id="School" class="btn btn-secondary" >School</a>
+    </div>
 
-        <!-- Unnamed (Shape) -->
-        <div id="u37" class="ax_default primary_button1">
-          <img id="u37_img" class="img " src="images/sign_up_-_selection_between_refugee_and_student/u36.svg"/>
-          <div id="u37_text" class="text ">
-            <p><span>Organization Administrator</span></p>
-          </div>
-        </div>
-      </div>
 
       <!-- Navigation Bar (Group) -->
       <div id="u38" class="ax_default" data-label="Navigation Bar" data-left="-51" data-top="0" data-width="1500" data-height="152">

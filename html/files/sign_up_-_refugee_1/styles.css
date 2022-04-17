@@ -285,14 +285,14 @@
   font-size:16px;
   color:#333333;
 }
-#u62 {
+#form-group-1 {
   border-width:0px;
   position:absolute;
   left:641px;
   top:394px;
   width:300px;
   height:23px;
-  display:flex;
+ 
   font-family:"Roboto", sans-serif;
   font-weight:400;
   font-style:normal;
@@ -644,14 +644,13 @@
   font-size:16px;
   color:#333333;
 }
-#u65 {
+#form-group-2 {
   border-width:0px;
   position:absolute;
   left:641px;
   top:472px;
   width:300px;
   height:23px;
-  display:flex;
   font-family:"Roboto", sans-serif;
   font-weight:400;
   font-style:normal;
@@ -1231,14 +1230,13 @@
   font-size:18px;
   letter-spacing:0.4px;
 }
-#u70 {
-  border-width:0px;
+.btn {
+  .border-width:0px;
   position:absolute;
   left:741px;
   top:616px;
   width:101px;
   height:52px;
-  display:flex;
   font-family:"Raleway Medium", "Raleway", sans-serif;
   font-weight:500;
   font-style:normal;

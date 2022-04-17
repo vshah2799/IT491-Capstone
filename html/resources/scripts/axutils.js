@@ -4,7 +4,7 @@
  *
  *
  */
-const START_URL_NAME = 'start.php';
+const START_URL_NAME = 'start.html';
 const PAGE_ID_NAME = 'id';
 const PAGE_URL_NAME = 'p';
 const SITEMAP_COLLAPSE_VAR_NAME = 'c';
