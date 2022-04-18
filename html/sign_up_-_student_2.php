@@ -193,7 +193,7 @@
       <div id="u198" class="ax_default heading_1">
         <div id="u198_div" class=""></div>
         <div id="u198_text" class="text ">
-          <p><span>REDU</span></p>
+          <p><span><a href="home.php">REDU</a></span></p>
         </div>
       </div>
 
@@ -201,7 +201,7 @@
       <div id="u199" class="ax_default link_button">
         <div id="u199_div" class=""></div>
         <div id="u199_text" class="text ">
-          <p><span>SIGN UP</span></p>
+          <p><span><a href="sign_up_-_selection_between_refugee_and_student.php">SIGN UP</a></span></p>
         </div>
       </div>
 
@@ -209,7 +209,7 @@
       <div id="u200" class="ax_default link_button">
         <div id="u200_div" class=""></div>
         <div id="u200_text" class="text ">
-          <p><span>ABOUT</span></p>
+          <p><span><a href="about_us.php">ABOUT</a></span></p>
         </div>
       </div>
 
@@ -217,7 +217,7 @@
       <div id="u201" class="ax_default link_button">
         <div id="u201_div" class=""></div>
         <div id="u201_text" class="text ">
-          <p><span>CONTACT US</span></p>
+          <p><span><a href="contact_us.php">CONTACT US</a></span></p>
         </div>
       </div>
 
@@ -225,7 +225,7 @@
       <div id="u202" class="ax_default link_button">
         <div id="u202_div" class=""></div>
         <div id="u202_text" class="text ">
-          <p><span>LOG IN</span></p>
+          <p><span><a href="sign_in.php">LOG IN</a></span></p>
         </div>
       </div>
 
@@ -247,7 +247,9 @@
 
       <!-- Unnamed (Image) -->
       <div id="u205" class="ax_default image">
+      <a href="home.php">
         <img id="u205_img" class="img " src="images/home/u29.png"/>
+      </a>
         <div id="u205_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>

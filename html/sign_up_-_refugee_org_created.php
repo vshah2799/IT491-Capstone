@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>About Us</title>
+    <title>Sign Up - Refugee Org Created</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/about_us/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/sign_up_-_refugee_org_created/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-3.2.1.min.js"></script>
     <script src="resources/scripts/axure/axQuery.js"></script>
     <script src="resources/scripts/axure/globals.js"></script>
@@ -38,7 +39,7 @@
     <script src="resources/scripts/axure/math.js"></script>
     <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
     <script src="data/document.js"></script>
-    <script src="files/about_us/data.js"></script>
+    <script src="files/sign_up_-_refugee_org_created/data.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
@@ -51,190 +52,170 @@
       <!-- Unnamed (Header) -->
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u936" class="ax_default heading_1">
-        <div id="u936_div" class=""></div>
-        <div id="u936_text" class="text ">
+      <div id="u97" class="ax_default heading_1">
+        <div id="u97_div" class=""></div>
+        <div id="u97_text" class="text ">
           <p><span><a href="home.php">REDU</a></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u937" class="ax_default link_button">
-        <div id="u937_div" class=""></div>
-        <div id="u937_text" class="text ">
+      <div id="u98" class="ax_default link_button">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
           <p><span><a href="sign_up_-_selection_between_refugee_and_student.php">SIGN UP</a></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u938" class="ax_default link_button">
-        <div id="u938_div" class=""></div>
-        <div id="u938_text" class="text ">
+      <div id="u99" class="ax_default link_button">
+        <div id="u99_div" class=""></div>
+        <div id="u99_text" class="text ">
           <p><span><a href="about_us.php">ABOUT</a></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u939" class="ax_default link_button">
-        <div id="u939_div" class=""></div>
-        <div id="u939_text" class="text ">
+      <div id="u100" class="ax_default link_button">
+        <div id="u100_div" class=""></div>
+        <div id="u100_text" class="text ">
           <p><span><a href="contact_us.php">CONTACT US</a></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u940" class="ax_default link_button">
-        <div id="u940_div" class=""></div>
-        <div id="u940_text" class="text ">
+      <div id="u101" class="ax_default link_button">
+        <div id="u101_div" class=""></div>
+        <div id="u101_text" class="text ">
           <p><span><a href="sign_in.php">LOG IN</a></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u941" class="ax_default icon">
-        <img id="u941_img" class="img " src="images/home/u27.svg"/>
-        <div id="u941_text" class="text " style="display:none; visibility: hidden">
+      <div id="u102" class="ax_default icon">
+        <img id="u102_img" class="img " src="images/home/u27.svg"/>
+        <div id="u102_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u942" class="ax_default link_button">
-        <div id="u942_div" class=""></div>
-        <div id="u942_text" class="text ">
+      <div id="u103" class="ax_default link_button">
+        <div id="u103_div" class=""></div>
+        <div id="u103_text" class="text ">
           <p><span>CONNECT</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-      <div id="u943" class="ax_default image">
+      <div id="u104" class="ax_default image">
       <a href="home.php">
-        <img id="u943_img" class="img " src="images/home/u29.png"/>
+        <img id="u104_img" class="img " src="images/home/u29.png"/>
       </a>
-        <div id="u943_text" class="text " style="display:none; visibility: hidden">
+        <div id="u104_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
-      <div id="u935" style="display:none; visibility:hidden;"></div>
+      <div id="u96" style="display:none; visibility:hidden;"></div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u944" class="ax_default">
-        <div id="u944_div" class=""></div>
-        <div id="u944_text" class="text " style="display:none; visibility: hidden">
+      <div id="u105" class="ax_default">
+        <div id="u105_div" class=""></div>
+        <div id="u105_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u945" class="ax_default icon">
-        <img id="u945_img" class="img " src="images/home/u9.svg"/>
-        <div id="u945_text" class="text " style="display:none; visibility: hidden">
+      <div id="u106" class="ax_default icon">
+        <img id="u106_img" class="img " src="images/sign_up_-_student_created/u40.svg"/>
+        <div id="u106_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u946" class="ax_default icon">
-        <img id="u946_img" class="img " src="images/home/u10.svg"/>
-        <div id="u946_text" class="text " style="display:none; visibility: hidden">
+      <div id="u107" class="ax_default icon">
+        <img id="u107_img" class="img " src="images/sign_up_-_student_created/u41.svg"/>
+        <div id="u107_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u947" class="ax_default icon">
-        <img id="u947_img" class="img " src="images/home/u11.svg"/>
-        <div id="u947_text" class="text " style="display:none; visibility: hidden">
+      <div id="u108" class="ax_default icon">
+        <img id="u108_img" class="img " src="images/sign_up_-_student_created/u42.svg"/>
+        <div id="u108_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u948" class="ax_default icon">
-        <img id="u948_img" class="img " src="images/home/u12.svg"/>
-        <div id="u948_text" class="text " style="display:none; visibility: hidden">
+      <div id="u109" class="ax_default icon">
+        <img id="u109_img" class="img " src="images/sign_up_-_student_created/u43.svg"/>
+        <div id="u109_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u949" class="ax_default heading_3">
-        <div id="u949_div" class=""></div>
-        <div id="u949_text" class="text ">
+      <div id="u110" class="ax_default heading_3">
+        <div id="u110_div" class=""></div>
+        <div id="u110_text" class="text ">
           <p><span>© [Company Name] 2022, All Rights Reserved</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u950" class="ax_default heading_3">
-        <div id="u950_div" class=""></div>
-        <div id="u950_text" class="text ">
+      <div id="u111" class="ax_default heading_3">
+        <div id="u111_div" class=""></div>
+        <div id="u111_text" class="text ">
           <p><span>Terms Of Service</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u951" class="ax_default heading_3">
-        <div id="u951_div" class=""></div>
-        <div id="u951_text" class="text ">
+      <div id="u112" class="ax_default heading_3">
+        <div id="u112_div" class=""></div>
+        <div id="u112_text" class="text ">
           <p><span>Privacy Policy</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u952" class="ax_default heading_3">
-        <div id="u952_div" class=""></div>
-        <div id="u952_text" class="text ">
+      <div id="u113" class="ax_default heading_3">
+        <div id="u113_div" class=""></div>
+        <div id="u113_text" class="text ">
           <p><span>Volunteer</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u953" class="ax_default heading_2">
-        <div id="u953_div" class=""></div>
-        <div id="u953_text" class="text " style="display:none; visibility: hidden">
+      <div id="u114" class="ax_default box_1">
+        <div id="u114_div" class=""></div>
+        <div id="u114_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u954" class="ax_default heading_1">
-        <div id="u954_div" class=""></div>
-        <div id="u954_text" class="text ">
-          <p><span>About Us</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u955" class="ax_default heading_1">
-        <div id="u955_div" class=""></div>
-        <div id="u955_text" class="text ">
-          <p><span>Our Mission</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Image) -->
-      <div id="u956" class="ax_default image">
-        <img id="u956_img" class="img " src="images/about_us/u956.svg"/>
-        <div id="u956_text" class="text " style="display:none; visibility: hidden">
+      <div id="u115" class="ax_default box_1">
+        <div id="u115_div" class=""></div>
+        <div id="u115_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u957" class="ax_default heading_1">
-        <div id="u957_div" class=""></div>
-        <div id="u957_text" class="text ">
-          <p><span>At REDU, we are committed to helping refugee children get the education they deserve, no matter what their circumstances might be.</span></p>
+      <div id="u116" class="ax_default heading_1">
+        <div id="u116_div" class=""></div>
+        <div id="u116_text" class="text ">
+          <p><span>Refugee Org Account Created</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u958" class="ax_default heading_1">
-        <div id="u958_div" class=""></div>
-        <div id="u958_text" class="text ">
-          <p><span>By connecting children with students, they will be able to recieve tutoring on various subjects.</span></p>
-        </div>
+      <div class="mx-auto" style="width: 200px;">
+        <a href="sign_in.php" id="SignIn" type="button" class="btn btn-secondary" >Sign In</a>
       </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>

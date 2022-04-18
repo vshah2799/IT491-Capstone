@@ -206,7 +206,7 @@ Skills:</textarea>
       <div id="u542" class="ax_default heading_1">
         <div id="u542_div" class=""></div>
         <div id="u542_text" class="text ">
-          <p><span>REDU</span></p>
+          <p><span><a href="home.php">REDU</a></span></p>
         </div>
       </div>
 
@@ -214,7 +214,7 @@ Skills:</textarea>
       <div id="u543" class="ax_default link_button">
         <div id="u543_div" class=""></div>
         <div id="u543_text" class="text ">
-          <p><span>SIGN UP</span></p>
+          <p><span><a href="sign_up_-_selection_between_refugee_and_student.php">SIGN UP</a></span></p>
         </div>
       </div>
 
@@ -222,7 +222,7 @@ Skills:</textarea>
       <div id="u544" class="ax_default link_button">
         <div id="u544_div" class=""></div>
         <div id="u544_text" class="text ">
-          <p><span>ABOUT</span></p>
+          <p><span><a href="about_us.php">ABOUT</a></span></p>
         </div>
       </div>
 
@@ -230,7 +230,7 @@ Skills:</textarea>
       <div id="u545" class="ax_default link_button">
         <div id="u545_div" class=""></div>
         <div id="u545_text" class="text ">
-          <p><span>CONTACT US</span></p>
+          <p><span><a href="contact_us.php">CONTACT US</a></span></p>
         </div>
       </div>
 
@@ -238,7 +238,7 @@ Skills:</textarea>
       <div id="u546" class="ax_default link_button">
         <div id="u546_div" class=""></div>
         <div id="u546_text" class="text ">
-          <p><span>LOG IN</span></p>
+          <p><span><a href="sign_in.php">LOG IN</a></span></p>
         </div>
       </div>
 
@@ -260,7 +260,9 @@ Skills:</textarea>
 
       <!-- Unnamed (Image) -->
       <div id="u549" class="ax_default image">
+      <a href="home.php">
         <img id="u549_img" class="img " src="images/home/u29.png"/>
+      </a>
         <div id="u549_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
