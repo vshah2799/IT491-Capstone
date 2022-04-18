@@ -294,11 +294,9 @@
 
 <?php
 require ('../dbFiles/PushDataIntoDB.php');
-$sessionCook = session_set_cookie_params(0, "../CookieInfo");
-session_start();
 
 if($_POST["Username"] == NULL || $_POST["Password"] == NULL){
-    header("Location: sign_up_-_refugee_2.php");
+    header("Location: sign_up_-_refugee_1.php");
 }
 
 $usernameFromForm = $_POST["Username"];

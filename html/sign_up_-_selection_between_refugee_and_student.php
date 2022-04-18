@@ -241,8 +241,6 @@
   </body>
 </html>
 <?php
-$sessionCook = session_set_cookie_params(0, "../CookieInfo");
-session_start();
 
 if(isset($_SESSION["Username"])){
     header("Location: SignIn.php");

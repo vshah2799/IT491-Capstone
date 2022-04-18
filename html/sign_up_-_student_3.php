@@ -306,8 +306,6 @@
 </html>
 <?php
 require ('../dbFiles/PushDataIntoDB.php');
-$sessionCook = session_set_cookie_params(0, "../CookieInfo");
-session_start();
 
 if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])) {
     header("Location: SignUpStudentOne.php");
