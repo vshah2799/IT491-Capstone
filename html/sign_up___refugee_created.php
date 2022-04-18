@@ -220,3 +220,57 @@
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>
+<?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/StudentOrRefugeeAccountObject.php');
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
+    header("Location: SignUpRefugeeOne.php");
+}
+
+$firstNameFromForm = $_POST["FirstName"];
+$lastNameFromForm = $_POST["LastName"];
+$ageFromForm = intval($_POST["Age"]);
+$organizationFromForm = $_POST["Organization"];
+$genderFromForm = $_POST["Gender"];
+$ethnicityFromForm = $_POST["Ethnicity"];
+$languagesFromForm = $_POST["Languages"];
+$gradeFromForm = intval($_POST["Grade"]);
+$interestsAndHobbiesFromForm = $_POST["InterestsAndHobbies"];
+$subjectsFromForm = $_POST["Subjects"];
+
+
+$refugeeObject = new StudentOrRefugeeAccountObject();
+$refugeeObject->setUsername($_SESSION["Username"]);
+$refugeeObject->setPassword($_SESSION["Password"]);
+$refugeeObject->setFirstName($firstNameFromForm);
+$refugeeObject->setLastName($lastNameFromForm);
+$refugeeObject->setAge($ageFromForm);
+$refugeeObject->setOrganizationOrSchool($organizationFromForm);
+$refugeeObject->setGender($genderFromForm);
+$refugeeObject->setEthnicity($ethnicityFromForm);
+$refugeeObject->setLanguages($languagesFromForm);
+$refugeeObject->setGrade($gradeFromForm);
+$refugeeObject->setInterestsAndHobbies($interestsAndHobbiesFromForm);
+$refugeeObject->setSubjects($subjectsFromForm);
+$refugeeObject->setAccountType("Refugee");
+
+/*
+echo $refugeeObject->getUsername();
+echo $refugeeObject->getPassword();
+echo $refugeeObject->getFirstName();
+echo $refugeeObject->getLastName();
+echo $refugeeObject->getAge();
+echo $refugeeObject->getOrganizationOrSchool();
+echo $refugeeObject->getGender();
+echo $refugeeObject->getEthnicity();
+echo $refugeeObject->getLanguages();
+echo $refugeeObject->getGrade();
+echo $refugeeObject->getInterestsAndHobbies();
+echo $refugeeObject->getSubjects();
+echo $refugeeObject->getAccountType();
+*/
+
+pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);

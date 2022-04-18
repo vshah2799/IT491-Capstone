@@ -68,7 +68,7 @@ if($_POST["Username"] == NULL || $_POST["Password"] == NULL){
 $usernameFromForm = $_POST["Username"];
 $passwordFromForm = $_POST["Password"];
 
-if(getAccountObject($usernameFromForm, "Student") != FALSE){
+if(getAccountObject($usernameFromForm, "Refugee") != FALSE){
     header("Location: SignUpErrorPage.php");
 }else{
 

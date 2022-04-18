@@ -289,3 +289,23 @@
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>
+
+<?php
+require ('../dbFiles/PushDataIntoDB.php');
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+
+if($_POST["Username"] == NULL || $_POST["Password"] == NULL){
+    header("Location: sign_up_-_refugee_2.php");
+}
+
+$usernameFromForm = $_POST["Username"];
+$passwordFromForm = $_POST["Password"];
+
+if(getAccountObject($usernameFromForm, "Refugee") != FALSE){
+    header("Location: SignUpErrorPage.php");
+}else{
+
+    $_SESSION["Username"] = $usernameFromForm;
+    $_SESSION["Password"] = $passwordFromForm;
+}

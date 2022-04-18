@@ -247,3 +247,7 @@
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>
+<?php
+require ('../dbFiles/PushDataIntoDB.php');
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
