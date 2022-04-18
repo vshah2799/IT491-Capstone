@@ -81,7 +81,7 @@
         <a href="SignUpStudentOne.php" id="Student" type="button" class="btn btn-secondary" >Student</a>
         <a href="SignUpForRefugeeOrganizationOne.php" id="Refugee-Org" type="button" class="btn btn-secondary" >Refugee Organization</a>
         <a href="SignUpForSchool.php" type="button" id="School" class="btn btn-secondary" >School</a>
-    </div>
+      </div>
 
 
       <!-- Navigation Bar (Group) -->
