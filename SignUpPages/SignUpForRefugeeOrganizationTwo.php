@@ -43,4 +43,4 @@ echo $roaObject ->getAddress();
 echo $roaObject ->getAccountType();
 */
 
-//pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);
+//pushAccountObjectIntoDB($roaObject->getUsername(),$roaObject->getAccountType(),$roaObject);

@@ -49,7 +49,7 @@
   <body>
     <div id="base" class="">
 
-      <form action="accounts_page_-_school_admin.php" method="post">
+      <form action="sign_up_-_school_created.php" method="post">
         <div class="mb-3">
             <label  class="form-label">Username</label>
             <input type="username" class="form-control" name="Username" required >
@@ -173,7 +173,7 @@
       <div id="u290" class="ax_default heading_1">
         <div id="u290_div" class=""></div>
         <div id="u290_text" class="text ">
-          <p><span>School Admin Login</span></p>
+          <p><span>School Admin Sign Up</span></p>
         </div>
       </div>
 

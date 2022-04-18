@@ -20,7 +20,7 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject)
             return TRUE;
         } catch(Exception $e) {
             mysqli_close($conn);
-            return "Error has occurred creating account";
+            return "Error has occurred creating account 1";
         }
     }else{
         $sql = "UPDATE Accounts SET AccountObject='$baseSixtyFourAccountObject' WHERE Username='$accountUsername'";
@@ -30,7 +30,7 @@ function pushAccountObjectIntoDB($accountUsername, $accountType, $accountObject)
             return TRUE;
         } catch(Exception $e) {
             mysqli_close($conn);
-            return "Error has occurred creating account";
+            return "Error has occurred creating account 2";
         }
     }
 }

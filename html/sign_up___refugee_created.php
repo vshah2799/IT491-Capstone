@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
+    header("Location: SignUpRefugeeOne.php");
+}
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up = Refugee Created</title>
@@ -226,9 +233,7 @@
 require ('../dbFiles/PushDataIntoDB.php');
 require ('../dbFiles/StudentOrRefugeeAccountObject.php');
 
-if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
-    header("Location: SignUpRefugeeOne.php");
-}
+
 
 $firstNameFromForm = $_POST["FirstName"];
 $lastNameFromForm = $_POST["LastName"];

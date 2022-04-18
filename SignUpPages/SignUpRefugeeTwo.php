@@ -61,7 +61,7 @@ require ('../dbFiles/PushDataIntoDB.php');
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
 
-if($_POST["Username"] == NULL || $_POST["Password"] == NULL){
+if(empty($_POST["Username"]) || empty($_POST["Password"])){
     header("Location: SignUpStudentOne.php");
 }
 

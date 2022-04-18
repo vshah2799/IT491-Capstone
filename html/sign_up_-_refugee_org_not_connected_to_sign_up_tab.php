@@ -117,7 +117,7 @@
         <div id="u316" style="display:none; visibility:hidden;"></div>
       </div>
 
-      <form action="accounts_page_-_roa.php" method="post">
+      <form action="sign_up_-_refugee_org_created.php" method="post">
         <div class="mb-3">
             <label  class="form-label">Username</label>
             <input type="username" class="form-control" name="Username" required >
@@ -242,7 +242,7 @@
       <div id="u340" class="ax_default heading_1">
         <div id="u340_div" class=""></div>
         <div id="u340_text" class="text ">
-          <p><span>ROA Admin Login</span></p>
+          <p><span>ROA Admin Sign Up</span></p>
         </div>
       </div>
 

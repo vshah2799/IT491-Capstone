@@ -43,4 +43,4 @@ echo $schoolObject ->getAddress();
 echo $schoolObject ->getAccountType();
 */
 
-//pushAccountObjectIntoDB($refugeeObject->getUsername(),$refugeeObject->getAccountType(),$refugeeObject);
+//pushAccountObjectIntoDB($schoolObject->getUsername(),$schoolObject->getAccountType(),$schoolObject);

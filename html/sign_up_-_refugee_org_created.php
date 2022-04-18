@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+$usernameFromForm = $_POST["Username"];
+$passwordFromForm = $_POST["Password"];
+if(empty($usernameFromForm) || empty($passwordFromForm)){
+    header("Location: sign_up_-_refugee_org_not_connected_to_sign_up_tab.php");
+}
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up - Refugee Org Created</title>
@@ -221,3 +228,34 @@
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>
+<?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/RefugeeOrganizationAccountObject.php');
+
+
+
+$firstNameFromForm = $_POST["AdminFirstName"];
+$lastNameFromForm = $_POST["AdminLastName"];
+$organizationFromForm = $_POST["Organization"];
+$addressFromForm = $_POST["Address"];
+
+$roaObject = new RefugeeOrganizationAccountObject();
+$roaObject ->setUsername($usernameFromForm);
+$roaObject->setPassword($passwordFromForm);
+$roaObject ->setAdminFirstName($firstNameFromForm);
+$roaObject ->setAdminLastName($lastNameFromForm);
+$roaObject ->setOrganization($organizationFromForm);
+$roaObject ->setAddress($addressFromForm);
+$roaObject ->setAccountType("ROA");
+
+/*
+echo $roaObject ->getUsername();
+echo $roaObject->getPassword();
+echo $roaObject ->getAdminFirstName();
+echo $roaObject ->getAdminLastName();
+echo $roaObject ->getOrganization();
+echo $roaObject ->getAddress();
+echo $roaObject ->getAccountType();
+*/
+
+pushAccountObjectIntoDB($roaObject->getUsername(),$roaObject->getAccountType(),$roaObject);

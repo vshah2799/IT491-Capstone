@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+$usernameFromForm = $_POST["Username"];
+$passwordFromForm = $_POST["Password"];
+if(empty($usernameFromForm) || empty($passwordFromForm)){
+    header("Location: sign_up_-_school_not_connected_to_sign_up_tab.php");
+}
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up - School Created</title>
@@ -221,3 +228,25 @@
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>
+<?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/SchoolAccountObject.php');
+if(getAccountObject($usernameFromForm, "School") != FALSE){
+    header("Location: SignUpErrorPage.php");
+}
+
+$firstNameFromForm = $_POST["AdminFirstName"];
+$lastNameFromForm = $_POST["AdminLastName"];
+$schoolFromForm = $_POST["School"];
+$addressFromForm = $_POST["Address"];
+
+$schoolObject = new SchoolAccountObject();
+$schoolObject ->setUsername($usernameFromForm);
+$schoolObject->setPassword($passwordFromForm);
+$schoolObject ->setAdminFirstName($firstNameFromForm);
+$schoolObject ->setAdminLastName($lastNameFromForm);
+$schoolObject ->setSchool($schoolFromForm);
+$schoolObject ->setAddress($addressFromForm);
+$schoolObject->setAccountType("School");
+
+pushAccountObjectIntoDB($schoolObject->getUsername(),$schoolObject->getAccountType(),$schoolObject);

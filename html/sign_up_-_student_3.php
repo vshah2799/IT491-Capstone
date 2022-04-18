@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿<?php
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+$usernameFromForm = $_POST["Username"];
+$passwordFromForm = $_POST["Password"];
+if(empty($usernameFromForm) || empty($passwordFromForm)){
+    header("Location: sign_up_-_student_1.php");
+}
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up - Student 3</title>
@@ -307,17 +316,10 @@
 <?php
 require ('../dbFiles/PushDataIntoDB.php');
 
-if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])) {
-    header("Location: SignUpStudentOne.php");
-}
-$usernameFromForm = $_POST["Username"];
-$passwordFromForm = $_POST["Password"];
-
 if(getAccountObject($usernameFromForm, "Student") != FALSE){
     header("Location: SignUpErrorPage.php");
 }else{
 
     $_SESSION["Username"] = $usernameFromForm;
     $_SESSION["Password"] = $passwordFromForm;
-    print("You are good");
 }

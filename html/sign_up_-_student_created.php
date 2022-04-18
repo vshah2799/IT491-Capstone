@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+//if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
+  //  header("Location: sign_up_-_student_1.php");
+//}
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up - Student Created</title>
@@ -226,10 +232,6 @@
 require ('../dbFiles/PushDataIntoDB.php');
 require ('../dbFiles/StudentOrRefugeeAccountObject.php');
 
-if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
-    header("Location: SignUpStudentOne.php");
-}
-
 $firstNameFromForm = $_POST["FirstName"];
 $lastNameFromForm = $_POST["LastName"];
 $ageFromForm = intval($_POST["Age"]);
@@ -257,7 +259,7 @@ $studentObject->setInterestsAndHobbies($interestsAndHobbiesFromForm);
 $studentObject->setSubjects($subjectsFromForm);
 $studentObject->setAccountType("Student");
 
-/*
+
 echo $studentObject->getUsername();
 echo $studentObject->getPassword();
 echo $studentObject->getFirstName();
@@ -271,6 +273,6 @@ echo $studentObject->getGrade();
 echo $studentObject->getInterestsAndHobbies();
 echo $studentObject->getSubjects();
 echo $studentObject->getAccountType();
-*/
+
 
 pushAccountObjectIntoDB($studentObject->getUsername(),$studentObject->getAccountType(),$studentObject);
