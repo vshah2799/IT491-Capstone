@@ -213,7 +213,7 @@
       </div>
 
       <div class="mx-auto" style="width: 200px;">
-        <a href="SignIn.php" id="SignIn" type="button" class="btn btn-secondary" >Sign In</a>
+        <a href="sign_in.php" id="SignIn" type="button" class="btn btn-secondary" >Sign In</a>
       </div>
 
     </div>

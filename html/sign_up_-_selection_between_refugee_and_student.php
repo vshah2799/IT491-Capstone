@@ -77,10 +77,10 @@
         </div>
 
       <div class="mx-auto" style="width: 200px;">
-        <a href="SignUpRefugeeOne.php" id="Refugee" type="button" class="btn btn-secondary" >Refugee</a>
-        <a href="SignUpStudentOne.php" id="Student" type="button" class="btn btn-secondary" >Student</a>
-        <a href="SignUpForRefugeeOrganizationOne.php" id="Refugee-Org" type="button" class="btn btn-secondary" >Refugee Organization</a>
-        <a href="SignUpForSchool.php" type="button" id="School" class="btn btn-secondary" >School</a>
+        <a href="sign_up_-_refugee_1.php" id="Refugee" type="button" class="btn btn-secondary" >Refugee</a>
+        <a href="sign_up_-_student_1.php" id="Student" type="button" class="btn btn-secondary" >Student</a>
+        <a href="sign_up_-_refugee_org_not_connected_to_sign_up_tab.php" id="Refugee-Org" type="button" class="btn btn-secondary" >Refugee Organization</a>
+        <a href="sign_up_-_school_not_connected_to_sign_up_tab.php" type="button" id="School" class="btn btn-secondary" >School</a>
       </div>
 
 

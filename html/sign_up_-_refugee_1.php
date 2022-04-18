@@ -73,18 +73,18 @@
         </div>
       </div>
 
-      <form>
-		  <div id="form-group-1">
-			<label id="label1" for="Username">Username</label>
-			<input type="username" class="form-control" name="Username" required>
-		  </div>
-		  <div id="form-group-2">
-			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" name="Password" required>
-		  </div>
-		  </div>
-		  <button type="submit" class="btn btn-secondary">Submit</button>
-	  </form>
+      <form action="sign_up_-_refugee_2.php" method="post">
+        <div id="form-group-1">
+        <label id="label1" for="Username">Username</label>
+        <input type="username" class="form-control" name="Username" required>
+        </div>
+        <div id="form-group-2">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="Password" required>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+	    </form>
 
       <!-- Navigation Bar (Group) -->
       <div id="u71" class="ax_default" data-label="Navigation Bar" data-left="0" data-top="0" data-width="1500" data-height="152">
