@@ -266,20 +266,19 @@
       <div id="u28" class="ax_default link_button">
         <div id="u28_div" class=""></div>
         <div id="u28_text" class="text ">
-          <p><span>CONNECT</span></p>
+          <p><span><a href="refugee_list_page.php">CONNECT</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-      <div id="u29" class="ax_default image">
-        <a href="home.php">
-          <img id="u29_img" class="img " src="images/home/u29.png"/>
-        </a>
-        <div id="u29_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+        <!-- Unnamed (Rectangle) -->
+        <div id="u29" class="ax_default link_button">
+            <div id="u29_div" class=""></div>
+            <div id="u29_text" class="text ">
+                <p><span> <a href="refugee_list_page.php">Account</span></p>
+            </div>
         </div>
-      </div>
-      <div id="u21" style="display:none; visibility:hidden;"></div>
+        <div id="u21" style="display:none; visibility:hidden;"></div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
