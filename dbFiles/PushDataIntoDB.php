@@ -56,3 +56,21 @@ function getAccountObject($accountUsername, $accountType){
         return FALSE;
     }
 }
+
+function getAllAccounts($accountType){
+    $conn = mysqli_connect("sql2.njit.edu", "vs598", "7p984^KTdv@M8o^", "vs598");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    $sql = "SELECT AccountObject FROM Accounts Where AccountType='$accountType'";
+
+    $result = $conn->query($sql);
+
+    if ($result->num_rows >= 0) {
+        return $result;
+    } else {
+        return FALSE;
+    }
+
+}

@@ -10,6 +10,7 @@ class StudentOrRefugeeAccountObject
     private string $organizationOrSchool;
     private string $gender;
     private string $ethnicity;
+
     private string $languages;
     private int $grade;
     private string $interestsAndHobbies;
@@ -17,6 +18,8 @@ class StudentOrRefugeeAccountObject
     private string $subjects;
     //Can be student or refugee
     private string $accountType;
+
+    private string $imageURL;
 
 
     /* Constructor doesn't work for some reason so not including it
@@ -26,6 +29,22 @@ class StudentOrRefugeeAccountObject
         $this->$password = $password;
     }
     */
+
+    /**
+     * @return string
+     */
+    public function getImageURL(): string
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param string $imageURL
+     */
+    public function setImageURL(string $imageURL): void
+    {
+        $this->imageURL = $imageURL;
+    }
 
     /**
      * @return int

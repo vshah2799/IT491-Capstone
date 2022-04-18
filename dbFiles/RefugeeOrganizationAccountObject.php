@@ -9,6 +9,41 @@ class RefugeeOrganizationAccountObject
     private string $username;
     private string $password;
     private string $address;
+    private string $email;
+    private string $imageURL;
+
+    /**
+     * @return string
+     */
+    public function getImageURL(): string
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param string $imageURL
+     */
+    public function setImageURL(string $imageURL): void
+    {
+        $this->imageURL = $imageURL;
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
+    }
 
 
     /**

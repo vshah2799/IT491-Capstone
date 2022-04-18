@@ -10,10 +10,6 @@
 <form action="SignUpStudentThree.php" method="post">
 
     <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input class="form-control" name="Password"  >
-    </div>
-    <div class="mb-3">
         <label class="form-label">First Name</label>
         <input class="form-control" name="FirstName"  >
     </div>

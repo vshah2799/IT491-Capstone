@@ -10,6 +10,40 @@ class SchoolAccountObject
     private string $username;
     private string $password;
     private string $address;
+    private string $schoolEmail;
+    private string $imageURL;
+
+    /**
+     * @return string
+     */
+    public function getImageURL(): string
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param string $imageURL
+     */
+    public function setImageURL(string $imageURL): void
+    {
+        $this->imageURL = $imageURL;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSchoolEmail(): string
+    {
+        return $this->schoolEmail;
+    }
+
+    /**
+     * @param string $schoolEmail
+     */
+    public function setSchoolEmail(string $schoolEmail): void
+    {
+        $this->schoolEmail = $schoolEmail;
+    }
 
     /**
      * @return string
