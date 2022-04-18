@@ -11,14 +11,13 @@ if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
 }
 
 if($_SESSION["AccountObject"] instanceof RefugeeOrganizationAccountObject){
-    header("Location: accounts_page_-_roa.php.php");
+    header("Location: accounts_page_-_roa.php");
 }elseif ($_SESSION["AccountObject"] instanceof SchoolAccountObject){
-    header("Location: accounts_page_-_school_admin.php.php");
+    header("Location: accounts_page_-_school_admin.php");
 }
 
 $accountObject = $_SESSION["AccountObject"];
 
-echo $accountObject->getUsername()
 ?>
 <!DOCTYPE html>
 <html>
@@ -284,7 +283,7 @@ echo $accountObject->getUsername()
             <input class="form-control" name="Age" value=<?php echo $accountObject->getAge();?> >
         </div>
         <div class="mb-3">
-            <label class="form-label">Organization</label>
+            <label class="form-label">Organization or School</label>
             <input class="form-control" name="Organization" value=<?php echo $accountObject->getOrganizationOrSchool();?> >
         </div>
         <div class="mb-3">
