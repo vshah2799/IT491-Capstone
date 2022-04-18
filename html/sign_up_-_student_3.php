@@ -78,7 +78,7 @@
 
       </div>
 
-      <form action="SignUpRefugeeThree.php" method="post">
+      <form action="sign_up_-_student_created.php" method="post">
 
         <div class="mb-3">
             <label class="form-label">First Name</label>
