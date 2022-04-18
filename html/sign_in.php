@@ -214,7 +214,7 @@
         </div>
       </div>
 
-      <form method="post">
+      <form action="sign_in_2.php" method="post">
 
         <div class="mb-3">
           <label class="form-label">Username</label>
@@ -224,8 +224,18 @@
             <label class="form-label">Password</label>
             <input class="form-control" name="Password"  >
         </div>
-    
-        <button type="submit" class="btn btn-secondary">Submit</button>
+
+          <div class=" my-1">
+              <label   for="inlineFormCustomSelect">Account Type</label>
+              <select name="AccountType" required id="inlineFormCustomSelect">
+                  <option selected></option>
+                  <option name="AccountType" >Refugee</option>
+                  <option name="AccountType" >Student</option>
+                  <option name="AccountType" >ROA</option>
+                  <option name="AccountType" >School</option>
+              </select>
+          </div>
+          <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
 
     </div>

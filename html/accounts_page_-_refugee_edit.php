@@ -1,4 +1,26 @@
-﻿<!DOCTYPE html>
+﻿<?php
+require ('../dbFiles/PushDataIntoDB.php');
+require ('../dbFiles/StudentOrRefugeeAccountObject.php');
+require ('../dbFiles/SchoolAccountObject.php');
+require ('../dbFiles/RefugeeOrganizationAccountObject.php');
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["AccountObject"])){
+    header("Location: sign_in.php");
+}
+
+if($_SESSION["AccountObject"] instanceof RefugeeOrganizationAccountObject){
+    header("Location: accounts_page_-_roa.php.php");
+}elseif ($_SESSION["AccountObject"] instanceof SchoolAccountObject){
+    header("Location: accounts_page_-_school_admin.php.php");
+}
+
+$accountObject = $_SESSION["AccountObject"];
+
+echo $accountObject->getUsername()
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Accounts page - Refugee Edit</title>
@@ -244,53 +266,52 @@
       </div>
 
       <form action="accounts_page_-_refugee.php" method="post">
-
+          <fieldset disabled>
         <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input class="form-control" name="Password"  >
+            <label class="form-label">Username</label>
+            <input class="form-control" name="Password" id="disabledInput" value=<?php echo $accountObject->getUsername()?> >
         </div>
         <div class="mb-3">
             <label class="form-label">First Name</label>
-            <input class="form-control" name="FirstName"  >
+            <input class="form-control" name="FirstName" value=<?php echo $accountObject->getFirstName();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Last Name</label>
-            <input class="form-control" name="LastName"  >
+            <input class="form-control" name="LastName" value=<?php echo $accountObject->getLastName();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Age</label>
-            <input class="form-control" name="Age"  >
+            <input class="form-control" name="Age" value=<?php echo $accountObject->getAge();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Organization</label>
-            <input class="form-control" name="Organization"  >
+            <input class="form-control" name="Organization" value=<?php echo $accountObject->getOrganizationOrSchool();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Gender</label>
-            <input class="form-control" name="Gender"  >
+            <input class="form-control" name="Gender" value=<?php echo $accountObject->getGender();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Ethnicity</label>
-            <input class="form-control" name="Ethnicity"  >
+            <input class="form-control" name="Ethnicity" value=<?php echo $accountObject->getEthnicity();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Languages</label>
-            <input class="form-control" name="Languages"  >
+            <input class="form-control" name="Languages" value=<?php echo $accountObject->getLanguages();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Grade</label>
-            <input class="form-control" name="Grade"  >
+            <input class="form-control" name="Grade" value=<?php echo $accountObject->getGrade();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Interests and Hobbies</label>
-            <input class="form-control" name="InterestsAndHobbies"  >
+            <input class="form-control" name="InterestsAndHobbies" value=<?php echo $accountObject->getInterestsAndHobbies();?> >
         </div>
         <div class="mb-3">
             <label class="form-label">Subjects</label>
-            <input class="form-control" name="Subjects"  >
+            <input class="form-control" name="Subjects" value=<?php echo $accountObject->getSubjects();?>  >
         </div>
-    
-        <button type="submit" class="btn btn-secondary">Submit</button>
+          </fieldset>
       </form>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>

@@ -162,56 +162,6 @@
             <!-- Unnamed (Group) -->
             <div id="u564" class="ax_default" data-left="-59" data-top="-179" data-width="1224" data-height="1751">
 
-              <form action="AccountRefugeeThree.php" method="post">
-
-                <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input class="form-control" name="Password"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">First Name</label>
-                    <input class="form-control" name="FirstName"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Last Name</label>
-                    <input class="form-control" name="LastName"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Age</label>
-                    <input class="form-control" name="Age"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Organization</label>
-                    <input class="form-control" name="Organization"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Gender</label>
-                    <input class="form-control" name="Gender"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Ethnicity</label>
-                    <input class="form-control" name="Ethnicity"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Languages</label>
-                    <input class="form-control" name="Languages"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Grade</label>
-                    <input class="form-control" name="Grade"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Interests and Hobbies</label>
-                    <input class="form-control" name="InterestsAndHobbies"  >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Subjects</label>
-                    <input class="form-control" name="Subjects"  >
-                </div>
-            
-                <button type="submit" class="btn btn-secondary">Submit</button>
-            </form>
-
               <!-- Unnamed (Image) -->
               <div id="u565" class="ax_default image">
                 <img id="u565_img" class="img " src="images/refugee_list_page/p0.jpg"/>
@@ -242,8 +192,58 @@
             </div>
           </div>
         </div>
+
       </div>
 
+    <form action="AccountRefugeeThree.php" method="post">
+
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" name="Password"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input class="form-control" name="FirstName"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input class="form-control" name="LastName"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input class="form-control" name="Age"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Organization</label>
+            <input class="form-control" name="Organization"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <input class="form-control" name="Gender"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ethnicity</label>
+            <input class="form-control" name="Ethnicity"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Languages</label>
+            <input class="form-control" name="Languages"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Grade</label>
+            <input class="form-control" name="Grade"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Interests and Hobbies</label>
+            <input class="form-control" name="InterestsAndHobbies"  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Subjects</label>
+            <input class="form-control" name="Subjects"  >
+        </div>
+
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
       <!-- Unnamed (Rectangle) -->
       <div id="u583" class="ax_default heading_2">
         <div id="u583_div" class=""></div>
