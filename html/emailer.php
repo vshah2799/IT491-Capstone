@@ -26,7 +26,12 @@ if($accountObject->getAccountType() == "Refugee"){
     Please contact " . $accountObject->getOrganizationOrSchool() . " to have them get in touch!";
 }
 
-mail("vs598@njit.edu", $emailSubject, $emailBody);
+if($_SESSION["AccountType"] == "Refugee"){
+    mail("vs598@njit.edu", $emailSubject, $emailBody);
+}else{
+    mail("refugeeorg@gmail.com", $emailSubject, $emailBody);
+}
+
 
 header("Location: home.php");
 
