@@ -1,8 +1,8 @@
 ﻿<?php
 session_start();
-//if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
-  //  header("Location: sign_up_-_student_1.php");
-//}
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
+    header("Location: sign_up_-_student_1.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
