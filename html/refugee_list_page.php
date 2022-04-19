@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>Refugee List page</title>
+    <title>Student List page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
@@ -1136,7 +1136,7 @@
       <div id="u368" class="ax_default heading_1">
         <div id="u368_div" class=""></div>
         <div id="u368_text" class="text ">
-          <p><span>Refugee List</span></p>
+          <p><span>Student List</span></p>
         </div>
       </div>
 
