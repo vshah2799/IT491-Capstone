@@ -21,6 +21,12 @@ class StudentOrRefugeeAccountObject
 
     private string $imageURL;
 
+    private string $email;
+
+
+
+
+
 
     /* Constructor doesn't work for some reason so not including it
     public function __construct($username, $password)
@@ -29,6 +35,23 @@ class StudentOrRefugeeAccountObject
         $this->$password = $password;
     }
     */
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
+    }
+
 
     /**
      * @return string

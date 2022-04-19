@@ -257,6 +257,7 @@ $studentObject->setLanguages($languagesFromForm);
 $studentObject->setGrade($gradeFromForm);
 $studentObject->setInterestsAndHobbies($interestsAndHobbiesFromForm);
 $studentObject->setSubjects($subjectsFromForm);
+$studentObject->setEmail($_SESSION["Email"]);
 $studentObject->setAccountType("Student");
 
 

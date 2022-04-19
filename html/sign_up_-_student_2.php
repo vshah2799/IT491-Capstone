@@ -1,4 +1,32 @@
-﻿<!DOCTYPE html>
+﻿<?php
+require ('../dbFiles/PushDataIntoDB.php');
+$sessionCook = session_set_cookie_params(0, "../CookieInfo");
+session_start();
+$usernameFromForm = $_POST["Username"];
+$passwordFromForm = $_POST["Password"];
+$emailFromForm = $_POST["Email"];
+
+if(empty($usernameFromForm) || empty($passwordFromForm)){
+    header("Location: sign_up_-_student_1.php");
+}
+
+if(getAccountObject($usernameFromForm, "Student") != FALSE){
+    header("Location: SignUpErrorPage.php");
+}else{
+
+    $_SESSION["Username"] = $usernameFromForm;
+    $_SESSION["Password"] = $passwordFromForm;
+    $_SESSION["Email"] = $emailFromForm;
+}
+
+$verificationNumber = rand(1000, 9999);
+$subject = "REDU Verification";
+
+mail($_SESSION["Email"], $subject, $verificationNumber);
+
+$_SESSION["VerificationNumber"] = $verificationNumber;
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up - Student 2</title>
@@ -81,25 +109,22 @@
         </div>
       </div>
 
-      <!-- Unnamed (Text Field) -->
-      <div id="u183" class="ax_default text_field">
-        <div id="u183_div" class=""></div>
-        <input id="u183_input" type="text" value="" class="u183_input"/>
-      </div>
+        <form action="sign_up_-_student_3.php" method="post">
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u184" class="ax_default primary_button1">
-        <div id="u184_div" class=""></div>
-        <div id="u184_text" class="text ">
-          <p><span>Submit</span></p>
-        </div>
-      </div>
+            <div class="mb-3">
+                <label class="form-label">Code</label>
+                <input class="form-control" name="VerificationCode" required >
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u185" class="ax_default heading_1">
         <div id="u185_div" class=""></div>
         <div id="u185_text" class="text ">
-          <p><span>Verification code was sent to your school email</span></p>
+          <p><span>Verification code was sent to your school email.
+                   A new one will be sent each time this page is loaded</span></p>
         </div>
       </div>
 

@@ -1,10 +1,14 @@
 ﻿<?php
 $sessionCook = session_set_cookie_params(0, "../CookieInfo");
 session_start();
-$usernameFromForm = $_POST["Username"];
-$passwordFromForm = $_POST["Password"];
-if(empty($usernameFromForm) || empty($passwordFromForm)){
+if(!isset($_SESSION["Username"]) || !isset($_SESSION["Password"])){
     header("Location: sign_up_-_student_1.php");
+}
+
+$verificationNumbeFromForm = intval($_POST["VerificationCode"]);
+
+if($verificationNumbeFromForm != $_SESSION["VerificationNumber"]){
+    header("Location: sign_up_-_refugee_2.php");
 }
 ?>
 <!DOCTYPE html>
@@ -129,6 +133,9 @@ if(empty($usernameFromForm) || empty($passwordFromForm)){
             <label class="form-label">Subjects</label>
             <input class="form-control" name="Subjects" required >
         </div>
+          Select image to upload:
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <input type="submit" value="Upload Image" name="submit">
     
         <button type="submit" class="btn btn-secondary">Submit</button>
     </form>
@@ -314,12 +321,3 @@ if(empty($usernameFromForm) || empty($passwordFromForm)){
   </body>
 </html>
 <?php
-require ('../dbFiles/PushDataIntoDB.php');
-
-if(getAccountObject($usernameFromForm, "Student") != FALSE){
-    header("Location: SignUpErrorPage.php");
-}else{
-
-    $_SESSION["Username"] = $usernameFromForm;
-    $_SESSION["Password"] = $passwordFromForm;
-}
