@@ -239,7 +239,7 @@ if(empty($usernameFromForm) || empty($passwordFromForm)){
       <div id="u138" class="ax_default heading_1">
         <div id="u138_div" class=""></div>
         <div id="u138_text" class="text ">
-          <p><span>href="home.php">REDU</a></span></p>
+          <p><span><a href="home.php">REDU</a></span></p>
         </div>
       </div>
 
