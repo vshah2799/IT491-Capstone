@@ -222,7 +222,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Password</label>
-            <input class="form-control" name="Password"  >
+            <input class="form-control" name="Password" type="password"  >
         </div>
 
           <div class=" my-1">
